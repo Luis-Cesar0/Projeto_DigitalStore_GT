@@ -28,3 +28,22 @@
     --borda-redonda:8px
 
 }
+
+├── src/
+│   ├── compoments/
+│   │   ├── Header
+│   │   ├── Footer
+│   │   ├── Logo
+│   │   ├── ProductListing
+│   │   ├── ProductCard
+│   │   ├── ProductOptions
+│   │   ├── BuyBox
+│   │   ├── Section
+│   │   ├── FilterGroup
+│   │   └── ProductDetails
+│   └── pages/
+│       ├── HomePage
+│       ├── ProductViewPage
+│       └── ProductListingPage
+├── App.js
+└── index.js
