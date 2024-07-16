@@ -1,0 +1,107 @@
+/* config Geral */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /* cores */
+    --dark-gray:#1F1F1F;
+    --dark-gray-2:#474747;
+    --dark-gray-search:#4747470a;
+    --dark-gray-3:#666666;
+    --light-gray:#8F8F8F;
+    --light-gray-2:#cccccc;
+    --light-gray-3:#F5F5F5;
+    --primary:#C92071;
+    --secondary:#B5B6F2;
+    --error:#B5B6F2;
+    --success:#52CA76;
+    --warning:#F6AA1C;
+    --primary-gradient:linear-gradient( to right,#C92071,#EDABCA);
+    --secondary-gradient:linear-gradient( to right,#B5B6F2,#EFEFFF);
+    --white:#FFFFFF;
+    --Tertiary:#991956;
+
+    /* borda */
+    --borda-redonda:8px
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    
+}
+
+/* Header digital Store */
+header{
+    padding: 1% 3%;
+    width: 100%;
+}
+
+/*Parte decima do header  */
+#top-nav{
+    
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+#form-search-nav{
+    
+    background-color: var(--light-gray-3);
+    width: 55%;
+    border-radius: var(--borda-redonda);
+}
+#pesProduto{
+    width: 95%;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: var(--borda-redonda);
+}
+#btnPesquisa{
+    font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--dark-gray-3);
+    border: none;
+    border-radius: var(--borda-redonda);
+}
+
+#link_cadastro{
+    text-decoration: none;
+    border-bottom: 1px solid var(--dark-gray-2);
+    color: var(--dark-gray-2);
+}
+.btn_primary{
+    background-color: var(--primary);
+    color: var(--light-gray-3);
+    padding: 10px 40px;
+    margin-right: 50px;
+    margin-left: 20px;
+    border-radius: var(--borda-redonda);
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+/* parte de baixo do nav */
+#listNavLinks{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+    
+}
+.listLinks a{
+    text-decoration: none;
+    color: var(--dark-gray-3);
+    
+}
+.listLinksConfime a{
+    color: var(--primary);
+    font-weight:bold ;
+    border-bottom: 2px solid var(--primary);
+}
