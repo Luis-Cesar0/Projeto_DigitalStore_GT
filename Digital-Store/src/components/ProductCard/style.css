@@ -1,0 +1,85 @@
+/* config Geral */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* método para chamar a fonte */
+/* font-family: "Inter", sans-serif;  */
+
+/* variáveis de cores e arredondamento de borda */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* cores */
+    --dark-gray:#1F1F1F;
+    --dark-gray-2:#474747;
+    --dark-gray-search:#4747470a;
+    --dark-gray-3:#666666;
+    --light-gray:#8F8F8F;
+    --light-gray-2:#cccccc;
+    --light-gray-3:#F5F5F5;
+    --primary:#C92071;
+    --secondary:#B5B6F2;
+    --error:#B5B6F2;
+    --success:#52CA76;
+    --warning:#F6AA1C;
+    --primary-gradient:linear-gradient( to right,#C92071,#EDABCA);
+    --secondary-gradient:linear-gradient( to right,#B5B6F2,#EFEFFF);
+    --white:#FFFFFF;
+    --Tertiary:#991956;
+    --text-x-small: 14px;
+
+    /* borda */
+    --borda-redonda:8px
+
+}
+
+.cardDestaque {
+    width: 405px;
+    height: 251px;
+    background: #D8E3F2;
+    border-radius: var(--borda-redonda);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-family: "Inter", sans-serif;
+}
+
+.infoCard {
+    z-index: 1;
+    width: 172px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descontoCard {
+    width: 96px;
+    padding: 5px;
+    text-align: center;
+    display: inline;
+    background: #E7FF86;
+    font-weight: bold;
+    position: relative;
+    border-radius: 29px;
+}
+
+.btnCard {
+    background: var(--white);
+    width: 153px;
+    height: 48px;
+    border: none;
+    border-radius: var(--borda-redonda);
+    color: #991956;
+    font-weight: bold;
+}
+
+.imagemCard {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
