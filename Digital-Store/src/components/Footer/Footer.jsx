@@ -20,17 +20,17 @@ const Footer = () => {
                     </div>
                     <div className="subgrupicons">
                         <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
-                            <div>
+                            <div onClick={()=> window.location.href='https://facebook.com'}>
                                 <FaFacebookF />
                             </div>
                         </IconContext.Provider>
                         <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
-                            <div>
+                            <div onClick={()=> window.location.href = "https://www.instagram.com/digitalcollegebr/"}>
                                 <BsInstagram />
                             </div>
                         </IconContext.Provider>
                         <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
-                            <div>
+                            <div onClick={()=> window.location.href='https://x.com'}>
                                 <BsTwitter />
                             </div>
                         </IconContext.Provider>
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="copyright">
-                <span>&copy; 2022 Digital college</span>
+                <span>&copy; 2024 Digital college</span>
             </div>
         </div>
     );
