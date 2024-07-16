@@ -1,0 +1,30 @@
+.informacoes {
+  padding: 20px;
+  flex: 1;
+}
+
+.informacoes .subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.informacoes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.informacoes ul li {
+  margin: 0 0 15px;
+  white-space: nowrap;
+}
+
+.informacoes ul li a {
+  color: #FFFFFF; /* Garantir que o texto seja branco */
+  text-decoration: none;
+}
+
+.informacoes ul li a:hover {
+  text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+}

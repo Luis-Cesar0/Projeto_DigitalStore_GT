@@ -1,18 +1,35 @@
 import React from 'react';
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
 import { IconContext } from "react-icons";
-import logoDigital from '../../images/logo-digital.png'
+import Logo from './Logo';
+import Informacoes from './Informacoes';
 import './Footer.css';
 
 const Footer = () => {
+    const infoList1 = [
+        { text: "Sobre Drip Store", link: "/about" },
+        { text: "Segurança", link: "/security" },
+        { text: "Wishlist", link: "/wishlist" },
+        { text: "Blog", link: "/blog" },
+        { text: "Trabalhe conosco", link: "/careers" },
+        { text: "Meus Pedidos", link: "/orders" }
+    ];
+
+    const infoList2 = [
+        { text: "Camisetas", link: "/shirts" },
+        { text: "Calças", link: "/pants" },
+        { text: "Bonés", link: "/caps" },
+        { text: "Headphones", link: "/headphones" },
+        { text: "Tênis", link: "/shoes" }
+    ];
+
     return (
         <div className="footercontainer">
             <div className="subcontainer">
                 <div className="subgrup1">
                     <div className="logo-container">
-                        <img src={logoDigital} alt="logo-digital" />
+                        <Logo />
                         <span className="subgruptitle">Digital Store</span>
                     </div>
                     <div className="description">
@@ -20,45 +37,20 @@ const Footer = () => {
                     </div>
                     <div className="subgrupicons">
                         <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
-                            <div onClick={()=> window.location.href='https://facebook.com'}>
+                            <div onClick={() => window.location.href = 'https://facebook.com'}>
                                 <FaFacebookF />
                             </div>
-                        </IconContext.Provider>
-                        <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
-                            <div onClick={()=> window.location.href = "https://www.instagram.com/digitalcollegebr/"}>
+                            <div onClick={() => window.location.href = "https://www.instagram.com/digitalcollegebr/"}>
                                 <BsInstagram />
                             </div>
-                        </IconContext.Provider>
-                        <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
-                            <div onClick={()=> window.location.href='https://x.com'}>
+                            <div onClick={() => window.location.href = 'https://x.com'}>
                                 <BsTwitter />
                             </div>
                         </IconContext.Provider>
                     </div>
                 </div>
-                <div className="subgrup2">
-                    <div className="subgruplists">
-                        <h3 className="subtitle">Informações</h3>
-                        <ul>
-                            <li>Sobre Drip Store</li>
-                            <li>Segurança</li>
-                            <li>Wishlist</li>
-                            <li>Blog</li>
-                            <li>Trabalhe conosco</li>
-                            <li>Meus Pedidos</li>
-                        </ul>
-                    </div>
-                    <div className="subgruplists">
-                        <h3 className="subtitle">Categorias</h3>
-                        <ul>
-                            <li>Camisetas</li>
-                            <li>Calças</li>
-                            <li>Bonés</li>
-                            <li>Headphones</li>
-                            <li>Tênis</li>
-                        </ul>
-                    </div>
-                </div>
+                <Informacoes title="Informações" informations={infoList1} />
+                <Informacoes title="Categorias" informations={infoList2} />
                 <div className="subgrup3">
                     <h3 className="subtitle">Contato</h3>
                     <div className="address">
@@ -70,11 +62,22 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
+            <div className='retangulo' style={{
+              width: '1240px',
+              height: '1px',
+              left: '100px',
+              top: '384px',
+              background: '#FFFFFF',
+              opacity: 0.3
+            }}>
+            </div>
             <div className="copyright">
-                <span>&copy; 2024 Digital college</span>
+                <span>&copy; {new Date().getFullYear()} Digital Store</span>
             </div>
         </div>
     );
 };
 
 export default Footer;
+
+
