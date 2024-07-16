@@ -49,11 +49,17 @@
 
 .infoCard {
     z-index: 1;
-    width: 172px;
     margin: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.infoCard h3{
+    width: 172px;
+    height: 72px;
+    font-weight: bold;
+    color: var(--dark-gray);
 }
 
 .descontoCard {
@@ -65,6 +71,7 @@
     font-weight: bold;
     position: relative;
     border-radius: 29px;
+    color: var(--dark-gray-2);
 }
 
 .btnCard {
@@ -73,7 +80,7 @@
     height: 48px;
     border: none;
     border-radius: var(--borda-redonda);
-    color: #991956;
+    color: var(--primary);
     font-weight: bold;
 }
 

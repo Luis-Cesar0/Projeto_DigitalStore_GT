@@ -1,3 +1,5 @@
+import './ProductCard.css'
+import camisaSupreme from './assets/camisa_supreme_carde.png'
 export default function ProductCard(){
     return (
     <div className="cardDestaque">
@@ -12,7 +14,7 @@ export default function ProductCard(){
         </div>
         <div className="imagemCard">
         
-            <img src="assets/camisa_supreme_carde.png" alt="Camisa Supreme"/>
+            <img src={camisaSupreme} alt="Camisa Supreme"/>
         </div>
     </div>
     )
