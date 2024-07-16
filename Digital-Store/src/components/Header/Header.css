@@ -76,14 +76,23 @@ header{
     border-bottom: 1px solid var(--dark-gray-2);
     color: var(--dark-gray-2);
 }
+#cadEntraCarinho{
+    display: flex;
+    align-items: end;
+}
 .btn_primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary);
-    color: var(--light-gray-3);
-    padding: 10px 40px;
+    color: #FFFFFF;
+    width: 114px;
+    height: 40px;
     margin-right: 50px;
     margin-left: 20px;
-    border-radius: var(--borda-redonda);
-    font-size: 1rem;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
 
 }

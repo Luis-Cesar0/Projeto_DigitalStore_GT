@@ -1,12 +1,12 @@
 
 import './App.css'
-import Cabesalho from './components/Header/Cabesalho'
+import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <div>
-      <Cabesalho />
+      <Header/>
       
       <Footer />
     </div>
