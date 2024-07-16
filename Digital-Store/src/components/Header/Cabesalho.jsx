@@ -1,12 +1,14 @@
 import './Cabesalho.css'
 
+import  logoDStore from '../../images/logo_DStore.png'
+import  carinhoCompras from '../../images/carinho-compra-2.png'
 
 export default function Cabesalho() {
     return(<header>
     <nav>
       <div id="top-nav" className="nav-filhos d-flex justify-content-between align-items-center">
         <a href="#" >
-            <img src="../../images/logo_DStore.png" alt="logo_DStore"/>
+            <img src={logoDStore} alt="logo_DStore"/>
             </a>
         <form action="#" method="get" id="form-search-nav" >
           <input type="search" name="pesProduto" id="pesProduto"  placeholder="Pesquisar produto..."/>
@@ -16,7 +18,7 @@ export default function Cabesalho() {
           <a href="#" className="nav-btn " id="link_cadastro">Cadastre-se</a>
           <a href="#" className="nav-btn btn_primary" id="btn_entra">Entra</a>
           <a href="#" id="btn-carrinho ">
-            <img src="img/carrinhoCompras.png" alt="carinho De compras"/>
+            <img src={carinhoCompras} alt="carinho De compras"/>
           </a>
        </div>
       </div>
