@@ -16,7 +16,7 @@ export default function Cabesalho() {
         </form>
        <div id="cadEntraCarinho">
           <a href="#" className="nav-btn " id="link_cadastro">Cadastre-se</a>
-          <a href="#" className="nav-btn btn_primary" id="btn_entra">Entra</a>
+          <a href="#" className="nav-btn btn_primary" id="btn_entra">Entrar</a>
           <a href="#" id="btn-carrinho ">
             <img src={carinhoCompras} alt="carinho De compras"/>
           </a>
