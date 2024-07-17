@@ -29,8 +29,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <Ordernar/>
-      <Filtrar  />
+      <Filtrar/>
 
       {/* <ProductCard/> */}
       {/* <ProductiListing listProduto={produtos}/> */}
