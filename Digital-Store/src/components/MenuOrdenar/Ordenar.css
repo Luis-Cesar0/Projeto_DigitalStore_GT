@@ -1,0 +1,53 @@
+.container {
+    max-width: 1240px;
+    color: #474747;
+    display: flex;
+}
+
+.sidebar {
+    width: 308px;
+    padding: 10px;
+}
+
+.ordenarCampo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tituloOrdenar {
+    font-size: 16px;
+    color: #474747; /* dark-gray-2 */
+    margin-bottom: 5px;
+}
+
+.listChoiceObjects {
+    width: 100%;
+    height: 40px;
+    color: #474747; /* dark-gray-2 */
+    border: 1px solid #474747;
+    border-radius: 4px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    color: #474747;
+}
+
+.tituloResultado {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.resultado {
+    font-weight: 400;
+}
+
+

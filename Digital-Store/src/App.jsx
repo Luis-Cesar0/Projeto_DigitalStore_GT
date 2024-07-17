@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer'
 // import ProductCard  from './components/ProductCard/ProductCard'
 import sapatoProduto from"./images/sapato_azul_Dstore.png"
 import Filtrar from './components/Filtrar/Filtrar'
-
+import Ordernar from './components/MenuOrdenar/Ordenar'
 
 
 function App() {
@@ -29,7 +29,8 @@ function App() {
   return (
     <div>
       <Header/>
-      <Filtrar/>
+      <Ordernar/>
+      <Filtrar  />
 
       {/* <ProductCard/> */}
       {/* <ProductiListing listProduto={produtos}/> */}

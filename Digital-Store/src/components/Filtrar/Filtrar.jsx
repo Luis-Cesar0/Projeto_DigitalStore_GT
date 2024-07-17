@@ -60,11 +60,11 @@ export default function Filtrar() {
                 </div>
                 <h5 className="subtitulos">Estado</h5>
                 <div>
-                    <input type="checkbox" style={{ border: "1px solid black" }} />
+                    <input type="checkbox"  className='checkCircle' />
                     <label htmlFor="">Novo</label>
                 </div>
                 <div>
-                    <input type="checkbox" />
+                    <input type="checkbox"  />
                     <label htmlFor="">Usado</label>
                 </div>
             </div>

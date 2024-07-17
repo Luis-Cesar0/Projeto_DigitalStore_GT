@@ -6,6 +6,14 @@
     box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
     width: 308px;
     height: 720px;
+    margin-left: 28px;
+    width: Hug (308px)px;
+top: 332px;
+left: 100px;
+gap: 20px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+
 }
 
 .container .titulo {
@@ -50,3 +58,12 @@
     height: 22px;
     margin: 0 0 10px;
 }
+
+.checkCircle{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #C92071;
+        
+}
+
