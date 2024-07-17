@@ -5,14 +5,13 @@
     /* cores */
     --dark-gray:#1F1F1F;
     --dark-gray-2:#474747;
-    --dark-gray-search:#4747470a;
     --dark-gray-3:#666666;
     --light-gray:#8F8F8F;
     --light-gray-2:#cccccc;
     --light-gray-3:#F5F5F5;
     --primary:#C92071;
     --secondary:#B5B6F2;
-    --error:#B5B6F2;
+    --error:#EE4266;
     --success:#52CA76;
     --warning:#F6AA1C;
     --primary-gradient:linear-gradient( to right,#C92071,#EDABCA);

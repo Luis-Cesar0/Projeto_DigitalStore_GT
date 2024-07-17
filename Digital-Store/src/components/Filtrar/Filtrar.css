@@ -32,14 +32,16 @@
     margin: 0;
 }
 
-.container .colunaCheckbox input[type="checkbox"] {
+.container .colunaCheckbox input[type="checkbox"],
+.container .colunaCheckbox input[type="radio"] {
     vertical-align: middle;
     margin: 0 10px 0 0;
     width: 22px;
     height: 22px;
 }
 
-.container .colunaCheckbox input[type="checkbox"]:checked {
+.container .colunaCheckbox input[type="checkbox"]:checked,
+.container .colunaCheckbox input[type="radio"]:checked {
     accent-color: #C92071;
 }
 
