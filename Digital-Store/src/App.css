@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* método para chamar a fonte */
+/* font-family: "Inter", sans-serif;  */
+
+
+
+:root{
+    /* cores */
+    --dark-gray:#1F1F1F;
+    --dark-gray-2:#474747;
+    --dark-gray-search:#4747470a;
+    --dark-gray-3:#666666;
+    --light-gray:#8F8F8F;
+    --light-gray-2:#cccccc;
+    --light-gray-3:#F5F5F5;
+    --primary:#C92071;
+    --secondary:#B5B6F2;
+    --error:#B5B6F2;
+    --success:#52CA76;
+    --warning:#F6AA1C;
+    --primary-gradient:linear-gradient( to right,#C92071,#EDABCA);
+    --secondary-gradient:linear-gradient( to right,#B5B6F2,#EFEFFF);
+    --white:#FFFFFF;
+    --Tertiary:#991956;
+    --text-x-small: 14px;
+
+    /* borda */
+    --borda-redonda:8px
+
+}

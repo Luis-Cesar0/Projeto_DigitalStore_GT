@@ -6,7 +6,8 @@ import CardProduto  from './components/ProductCard/CardProduto'
 // import Footer from './components/Footer/Footer'
 import ProductCard  from './components/ProductCard/ProductCard'
 import sapatoProduto from"./images/sapato_azul_Dstore.png"
-import Filtrar from './components/Filtrar/Filtrar'
+
+
 
 function App() {
   
@@ -24,13 +25,12 @@ let produtos= [
   }
   ]
 
-
   return (
     <div>
       <Header/>
       {/* <ProductCard/> */}
-      <CardProduto img={produtos[0].image} nome={produtos[0].name} preco={produtos[0].price} precoDesconto={produtos[0].priceDiscount}/>
-      {/* <Footer/> */}
+      {/* <ProductiListing listProduto={produtos}/> */}
+      <Footer/>
 
       <Filtrar/>
 
