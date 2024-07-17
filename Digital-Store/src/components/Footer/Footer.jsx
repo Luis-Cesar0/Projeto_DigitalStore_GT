@@ -2,7 +2,7 @@ import React from 'react';
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import Logo from './Logo';
+import Logo from '../Logo/Logo';
 import Informacoes from './Informacoes';
 import './Footer.css';
 

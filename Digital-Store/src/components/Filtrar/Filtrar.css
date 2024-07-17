@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    color: #474747;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
+    width: 308px;
+    height: 720px;
+}
+
+.container .titulo {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+}
+
+.container .subtitulos {
+    margin: 20px 0 10px 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.container .colunaCheckbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+
+.container .colunaCheckbox hr {
+    line-height: 1px;
+    width: 248px;
+    margin: 0;
+}
+
+.container .colunaCheckbox input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    width: 22px;
+    height: 22px;
+}
+
+.container .colunaCheckbox input[type="checkbox"]:checked {
+    accent-color: #C92071;
+}
+
+.container .colunaCheckbox div {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: inherit;
+    height: 22px;
+    margin: 0 0 10px;
+}
