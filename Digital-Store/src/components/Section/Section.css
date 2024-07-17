@@ -1,0 +1,19 @@
+.section-title{
+    
+    color: var(--dark-gray-2);
+    font-size: 24px;
+}
+.section-link{
+   
+    color: var(--primary);
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: auto;
+    
+}
+.cont-title-link{
+    display: flex;
+}
+.section-externa{
+    padding: 0px 100px;
+}
