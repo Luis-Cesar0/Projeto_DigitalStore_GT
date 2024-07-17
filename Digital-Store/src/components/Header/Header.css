@@ -78,7 +78,8 @@ header{
 }
 #cadEntraCarinho{
     display: flex;
-    align-items: end;
+    align-items: center;
+   
 }
 .btn_primary{
     display: flex;
