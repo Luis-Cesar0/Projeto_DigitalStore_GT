@@ -29,18 +29,25 @@
 
 }
 
+Marcação{
+    Feito=> ---
+    Em andamento => --
+    a Fazer => 
+}
+
 ├── src/
-│   ├── components/
-│   │   ├── Header
-│   │   ├── Footer
-│   │   ├── Logo
-│   │   ├── ProductListing
-│   │   ├── ProductCard
+│   ├── compoments/
+│   │   ├── Header---
+│   │   ├── Footer---
+│   │   ├── Logo--
+│   │   ├── ProductListing---
+│   │   ├── ProductCard---
 │   │   ├── ProductOptions
 │   │   ├── BuyBox
-│   │   ├── Section
-│   │   ├── FilterGroup
+│   │   ├── Section---
+│   │   ├── FilterGroup---
 │   │   └── ProductDetails
+│   │   └── Gallery
 │   └── pages/
 │       ├── HomePage
 │       ├── ProductViewPage

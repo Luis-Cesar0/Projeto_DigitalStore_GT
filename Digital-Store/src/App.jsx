@@ -30,7 +30,6 @@ function App() {
     <div>
       <Header/>
       <Filtrar/>
-
       {/* <ProductCard/> */}
       {/* <ProductiListing listProduto={produtos}/> */}
       <Footer/>
