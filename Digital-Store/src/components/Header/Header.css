@@ -14,7 +14,7 @@ header{
 }
 #form-search-nav{
     
-    background-color: var(--light-gray-3);
+    background-color: hsla(0, 0%, 40%, 0.040);
     width: 55%;
     border-radius: var(--borda-redonda);
 }
