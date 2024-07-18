@@ -1,22 +1,28 @@
 import './ProductCard.css'
-import camisaSupreme from './assets/camisa_supreme_carde.png'
-export default function ProductCard(){
-    return (
-    <div className="cardDestaque">
-        <div className="infoCard">
-            <div className="descontoCard">30% OFF</div>
-           
-            <h3>
-                 Novo drop Supreme
-            </h3>
+
+
+export default function ProductCard({img, nome, preco,precoDesconto='vazio',categoria} )
+{
+    let descporcento= ((preco - precoDesconto) *100)/preco
+    let imgBackgraud ={
+        backgroundImage: `url(${img})`
+    }
+    return(
+        <div className="cardProduto">
             
-            <button type="button" className="btnCard">Comprar</button>
+            <div className="cont-imagem-txto" style={imgBackgraud} >
+            {precoDesconto != 'vazio' && <p className='decprocento'>{descporcento.toFixed()}% OFF</p>}
+           </div>
+           <div className='descricao-produto'>
+               <p className='categoria'>{categoria}</p>
+                <h4>{nome}</h4>
+                <div className='cont-preco'>
+                    {precoDesconto == 'vazio' && <p className='texte-valor'>R${preco}</p> }
+                    {precoDesconto != 'vazio' && <p className='texte-valor precoDesc'>R${preco}</p>}
+                    {precoDesconto != 'vazio' && <p className='texte-valor'>R${precoDesconto}</p>}
+                    
+                </div>
+           </div>
         </div>
-        <div className="imagemCard">
-        
-            <img src={camisaSupreme} alt="Camisa Supreme"/>
-        </div>
-    </div>
     )
 }
-

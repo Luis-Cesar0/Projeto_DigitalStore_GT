@@ -1,92 +1,46 @@
-/* config Geral */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* método para chamar a fonte */
-/* font-family: "Inter", sans-serif;  */
-
-/* variáveis de cores e arredondamento de borda */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.decprocento{ 
+    color: var(--dark-gray-2);
+    background-color: #E7FF86;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 60%;
+    margin-top: 2%;
 }
-
-:root{
-    /* cores */
-    --dark-gray:#1F1F1F;
-    --dark-gray-2:#474747;
-    --dark-gray-search:#4747470a;
-    --dark-gray-3:#666666;
-    --light-gray:#8F8F8F;
-    --light-gray-2:#cccccc;
-    --light-gray-3:#F5F5F5;
-    --primary:#C92071;
-    --secondary:#B5B6F2;
-    --error:#B5B6F2;
-    --success:#52CA76;
-    --warning:#F6AA1C;
-    --primary-gradient:linear-gradient( to right,#C92071,#EDABCA);
-    --secondary-gradient:linear-gradient( to right,#B5B6F2,#EFEFFF);
-    --white:#FFFFFF;
-    --Tertiary:#991956;
-    --text-x-small: 14px;
-
-    /* borda */
-    --borda-redonda:8px
-
-}
-
-.cardDestaque {
-    width: 405px;
-    height: 251px;
-    background: #D8E3F2;
-    border-radius: var(--borda-redonda);
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    font-family: "Inter", sans-serif;
-}
-
-.infoCard {
-    z-index: 1;
-    margin: 30px;
+.cont-imagem-txto{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    width: 292px;
+    height: 321px;
+    align-items: center;
+    background-color: #fff;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;  
 }
-
-.infoCard h3{
-    width: 172px;
-    height: 72px;
-    font-weight: bold;
-    color: var(--dark-gray);
+.descricao-produto{
+    margin-top: 10px;
 }
-
-.descontoCard {
-    width: 96px;
-    padding: 5px;
-    text-align: center;
-    display: inline;
-    background: #E7FF86;
+.categoria{
+    margin-bottom: 3px;
+    font-size: 0.8rem;
+    color: var(--light-gray);
     font-weight: bold;
-    position: relative;
-    border-radius: 29px;
+}
+.descricao-produto h4{
     color: var(--dark-gray-2);
 }
-
-.btnCard {
-    background: var(--white);
-    width: 153px;
-    height: 48px;
-    border: none;
-    border-radius: var(--borda-redonda);
-    color: var(--primary);
+.cont-preco{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.texte-valor{
+    font-size: 24px;
     font-weight: bold;
 }
-
-.imagemCard {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
+.precoDesc{
+    color: var(--light-gray);
+    text-decoration: line-through;
 }
