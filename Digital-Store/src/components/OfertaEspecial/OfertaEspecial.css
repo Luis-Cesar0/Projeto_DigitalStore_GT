@@ -1,0 +1,48 @@
+.ofertaEspecial{
+    height: 553px;
+    background: var(--white);
+    font-family: "Inter", sans-serif;
+}
+.conteiner{
+    height: 553px;
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imgProduto{
+    display: flex;
+    text-align: center;
+    width: 573px;
+    align-items: end;
+}
+.descricaoOferta{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 589px;
+    height: 341px;
+    color: var(--dark-gray);
+}
+
+.descricaoOferta h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.descricaoOferta strong{
+    color: var(--primary);
+}
+
+.descricaoOferta input{
+    height: 40px;
+    width: 200px;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--borda-redonda);
+    color: var(--light-gray-3);
+    background: var(--primary);
+}
