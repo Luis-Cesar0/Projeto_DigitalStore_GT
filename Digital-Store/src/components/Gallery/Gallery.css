@@ -1,3 +1,42 @@
-.carousel{
-    background-color: red;
-}
+#galeria{
+    background-color: var(--light-gray-3);
+ }
+ .conteudo-galeria{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .texto-galeria{
+     width: 400px;
+     color: var(--dark-gray);
+ }
+ .texto-galeria h2{
+     font-size: 3rem;
+     font-weight: bold;
+ }
+ .alerta-promo{
+     color: var(--warning);
+ }
+ .detalhe-galeria{
+     color: var(--dark-gray-2);
+ }
+ .btn-primary{
+     background-color: var(--primary);
+     padding: 8px 20px;
+     border-radius: 8px;
+     border: none;
+     font-size: 16px;
+     color: var(--white);
+ }
+ /* indicador */
+ #cont-indicators .indicador{
+     background-color: var(--light-gray-2);
+     border-radius: 50%;
+     padding: 7px;
+     width: 0;
+     height: 0;
+ 
+ }
+ #cont-indicators .active{
+     background-color: var(--primary);
+ }
