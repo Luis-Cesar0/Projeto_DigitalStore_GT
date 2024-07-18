@@ -192,36 +192,4 @@
     display: none;
 }
 
-@media (max-width: 900px) {
-    .container {
-        width: 335px;
-    }
 
-    .nomeProduto {
-        font-size: 24px;
-    }
-
-    .referencias {
-        font-size: 12px;
-    }
-
-    .referencias span {
-        margin: 0 5px 0 0;
-    }
-
-    .avaliacoes .estrelas svg {
-        margin-right: 4px;
-    }
-
-    .mediaAvaliacao {
-        margin: 0 10px;
-    }
-
-    .botaoNormal {
-        display: none;
-    }
-
-    .botaoMedia {
-        display: block;
-    }
-}
