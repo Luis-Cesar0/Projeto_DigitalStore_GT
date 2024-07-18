@@ -2,6 +2,7 @@
     width: 700.73px;
     height: 687px;
     margin-right: 40px;
+    position: relative;
 }
 
 .imgPrincipal {
@@ -43,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 700.73px;
 }
 
 .imgSecundarias .img {
