@@ -1,6 +1,7 @@
 import './Header.css'
 import Logo from '../Logo/Logo'
 import  carinhoCompras from '../../images/carinho-compra-2.png'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     return(<header>

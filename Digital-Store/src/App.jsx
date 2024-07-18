@@ -12,7 +12,8 @@ import Gallery from './components/Gallery/Gallery'
 
 import Ordernar from './components/MenuOrdenar/Ordenar'
 import Section from './components/Section/Section'
-import './components/Section/Section.css'
+
+
 
 function App() {
   
