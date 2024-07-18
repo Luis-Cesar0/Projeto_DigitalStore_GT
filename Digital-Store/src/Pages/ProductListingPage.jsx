@@ -1,10 +1,10 @@
 import Filtrar from "../components/Filtrar/Filtrar";
 import Ordernar from "../components/MenuOrdenar/Ordenar";
 import ProductiListing from "../components/ProductListing/ProductListing";
-import CardProduto from "../components/ProductCard/CardProduto";
 
 
-export default function Produtos() {
+
+export default function ProductListingPage() {
     let produtos= [
         {
           name: "Nome do produto 1",
