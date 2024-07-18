@@ -10,8 +10,7 @@ import Gallery from './components/Gallery/Gallery'
 import Ordernar from './components/MenuOrdenar/Ordenar'
 import Section from './components/Section/Section'
 import ProductiListing from './components/ProductListing/ProductListing'
-
-
+import DetalhesProduto from './components/DetalhesProduto/DetalhesProduto'
 function App() {
   
 let produtos= [

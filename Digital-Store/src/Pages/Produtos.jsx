@@ -1,8 +1,7 @@
 import Filtrar from "../components/Filtrar/Filtrar";
 import Ordernar from "../components/MenuOrdenar/Ordenar";
 import ProductiListing from "../components/ProductListing/ProductListing";
-import CardProduto from "../components/ProductCard/CardProduto";
-
+import React from 'react'
 
 export default function Produtos() {
     let produtos= [

@@ -1,5 +1,5 @@
-import CardProduto from "../ProductCard/CardProduto";
 import './ProductListing.css'
+import ProductCard from '../ProductCard/ProductCard'
 
 
 export default function ProductiListing({listProduto}) {
@@ -7,7 +7,7 @@ export default function ProductiListing({listProduto}) {
         <div className="ProductiListing">
             {
                 listProduto.map((item,index)=>{
-                    return(<CardProduto img={item.image} nome={item.name} preco={item.price} precoDesconto={item.priceDiscount} categoria={item.categoria} key={index}/>)
+                    return(<ProductCard img={item.image} nome={item.name} preco={item.price} precoDesconto={item.priceDiscount} categoria={item.categoria} key={index}/>)
                 })
             }
         </div>
