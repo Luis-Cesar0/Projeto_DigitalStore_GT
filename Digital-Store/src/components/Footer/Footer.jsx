@@ -29,8 +29,8 @@ const Footer = () => {
             <div className="subcontainer">
                 <div className="subgrup1">
                     <div className="logo-container">
-                        <Logo />
-                        <span className="subgruptitle">Digital Store</span>
+                        <Logo cor='branca'/>
+                        
                     </div>
                     <div className="description">
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
