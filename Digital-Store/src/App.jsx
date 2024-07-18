@@ -5,9 +5,10 @@ import Header from './components/Header/Header'
 // import CardProduto  from './components/ProductCard/CardProduto'
 import Footer from './components/Footer/Footer'
 // import ProductCard  from './components/ProductCard/ProductCard'
-import sapatoProduto from"./images/sapato_azul_Dstore.png"
+// import sapatoProduto from"./images/sapato_azul_Dstore.png"
 import Filtrar from './components/Filtrar/Filtrar'
-import Ordernar from './components/MenuOrdenar/Ordenar'
+// import Ordernar from './components/MenuOrdenar/Ordenar'
+import Gallery from './components/Gallery/Gallery'
 
 
 function App() {
@@ -29,8 +30,9 @@ function App() {
   return (
     <div>
       <Header/>
+      <Gallery/>
       <Filtrar/>
-
+      
       {/* <ProductCard/> */}
       {/* <ProductiListing listProduto={produtos}/> */}
       <Footer/>
