@@ -1,3 +1,4 @@
+import ProductCard from '../ProductCard/ProductCard'
 import './ProductListing.css'
 import ProductCard from '../ProductCard/ProductCard'
 

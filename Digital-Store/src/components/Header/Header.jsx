@@ -22,10 +22,10 @@ export default function Header() {
       </div>
       <div id="bot-nav" className="nav-filhos ">
         <ul id="listNavLinks">
-          <li className="listLinks listLinksConfime"><a href="#" >Home</a></li>
-          <li className="listLinks"><a href="#">Produtos</a></li>
-          <li className="listLinks"><a href="#">Categoria</a></li>
-          <li className="listLinks"><a href="#">Meus Pedidos</a></li>
+          <li className="listLinks listLinksConfime"><Link to="/" >Home</Link></li>
+          <li className="listLinks"><Link to="/produtos">Produtos</Link></li>
+          <li className="listLinks"><Link to="#">Categoria</Link></li>
+          <li className="listLinks"><Link to="#">Meus Pedidos</Link></li>
         </ul>
       </div>
     </nav>
