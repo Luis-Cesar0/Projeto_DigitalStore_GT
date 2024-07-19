@@ -1,6 +1,10 @@
+/* container pai da galeria */
 #galeria{
     background-color: var(--light-gray-3);
  }
+
+
+ /* parte dos conteudo dentro da galeria */
  .conteudo-galeria{
      display: flex;
      justify-content: center;
@@ -40,3 +44,12 @@
  #cont-indicators .active{
      background-color: var(--primary);
  }
+ /* ClassName centralizado */
+.centro #container-galeria{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
