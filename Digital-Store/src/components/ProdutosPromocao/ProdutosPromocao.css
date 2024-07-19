@@ -60,7 +60,7 @@
 }
 
 .btnCard {
-    background: var(--white);
+    background-color: var(--white);
     width: 153px;
     height: 48px;
     border: none;

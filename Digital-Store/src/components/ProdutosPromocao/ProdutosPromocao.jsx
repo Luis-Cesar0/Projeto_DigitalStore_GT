@@ -56,7 +56,6 @@ const ProdutosPromocao = () => {
 
     return (
         <div className="cardsEmDestaque">
-            <strong>Coleções em destaque</strong>
             <div className="listaCardDestaque">
                 {cards.map((produto, index) => (
                     <div key={index} className="cardDestaque">
