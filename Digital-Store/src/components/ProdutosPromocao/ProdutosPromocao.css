@@ -1,5 +1,22 @@
 
+.colecoesEmDestaque{
+    width: 1239px;
+    margin: auto;
+}
 
+strong{
+    color: var(--dark-gray-2);
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.listaCardDestaque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1239px;
+    margin: auto;
+}
 .cardDestaque {
     width: 405px;
     height: 251px;

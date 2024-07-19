@@ -1,6 +1,9 @@
 import Gallery from "../components/Gallery/Gallery"
+import ProdutosPromocao from "../components/ProdutosPromocao/ProdutosPromocao"
 import OfertaEspecial from "../components/OfertaEspecial/OfertaEspecial"
 import SapatoBaner from '../images/Sapato_Ornamento.png'
+
+
 // import Sapatoroxo from '../images/sapato-roxo.png'
 // import Sapatobege from '../images/sapato-bege.png'
 // import Sapatorosa from '../images/sapato-rosa.png'
@@ -9,10 +12,13 @@ import SapatoBaner from '../images/Sapato_Ornamento.png'
 
 // const listspatos = [Sapatoroxo,Sapatobege,Sapatorosa,Sapatomarron,Sapatoamarelo]
  const listaimg =[SapatoBaner,SapatoBaner,SapatoBaner,SapatoBaner,SapatoBaner]
+ 
 export default function Home(){
+
     return(
         <main>
             <Gallery images={listaimg} />
+            <ProdutosPromocao/>
             <OfertaEspecial/>
         </main>
     )
