@@ -28,7 +28,6 @@ function App() {
         <div>
 
           <Layout/>
-          <SlideProduto/>
         </div>
     ) 
   }

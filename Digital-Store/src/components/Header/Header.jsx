@@ -2,8 +2,14 @@ import './Header.css'
 import Logo from '../Logo/Logo'
 import  carinhoCompras from '../../images/carinho-compra-2.png'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function Header() {
+  let [selectLink,setSelctLink] = useState(0)
+  
+  function handleSelctLink (index){
+    setSelctLink(index)
+  }
     return(<header>
     <nav>
       <div id="top-nav" className="nav-filhos d-flex justify-content-between align-items-center">
@@ -22,10 +28,18 @@ export default function Header() {
       </div>
       <div id="bot-nav" className="nav-filhos ">
         <ul id="listNavLinks">
-          <li className="listLinks listLinksConfime"><Link to="/" >Home</Link></li>
-          <li className="listLinks"><Link to="/produtos">Produtos</Link></li>
-          <li className="listLinks"><Link to="#">Categoria</Link></li>
-          <li className="listLinks"><Link to="#">Meus Pedidos</Link></li>
+          {['Home', 'Produtos','Categoria' , 'Meus Pedidos'].map((text, index) =>{
+            return(
+              <li
+                key={index}
+                className={selectLink ===  index ?
+                  'listLinks listLinksConfirme' : 'listLinks'}
+                  onClick={() => handleSelctLink(index)}
+              >
+                <Link to={index === 0 ? '/' : `/${text.toLocaleLowerCase()}`}>{text}</Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </nav>

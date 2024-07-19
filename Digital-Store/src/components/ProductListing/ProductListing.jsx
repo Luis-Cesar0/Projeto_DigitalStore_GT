@@ -1,5 +1,6 @@
 import ProductCard from '../ProductCard/ProductCard'
 import './ProductListing.css'
+import { Link } from 'react-router-dom'
 
 
 export default function ProductiListing({listProduto}) {
@@ -7,7 +8,14 @@ export default function ProductiListing({listProduto}) {
         <div className="ProductiListing">
             {
                 listProduto.map((item,index)=>{
-                    return(<ProductCard img={item.image} nome={item.name} preco={item.price} precoDesconto={item.priceDiscount} categoria={item.categoria} key={index}/>)
+                    return(
+                        <Link to={'produtos/:id'}  key={index} className='linkProductCard'>
+                            <ProductCard img={item.image} 
+                            nome={item.name} 
+                            preco={item.price} 
+                            precoDesconto={item.priceDiscount} 
+                            categoria={item.categoria}/> 
+                            </Link>)
                 })
             }
         </div>
@@ -18,18 +26,4 @@ export default function ProductiListing({listProduto}) {
 
 
 
-// let produtos= [
-//   {
-//     name: "Nome do produto 1",
-//     image: sapatoProduto,
-//     price: 200,
-//     priceDiscount: 149.9,
-//     categoria: 'Tênis'
-//   },
-//   {
-//     name: "Nome do produto 2",
-//     image: "./images/sapato_azul_Dstore.png",
-//     price: 49.9,
-//     categoria: 'Blusa'
-//   }
-//   ]
+  

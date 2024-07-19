@@ -73,7 +73,7 @@ header{
     color: var(--dark-gray-3);
     
 }
-.listLinksConfime a{
+.listLinksConfirme a{
     color: var(--primary);
     font-weight:bold ;
     border-bottom: 2px solid var(--primary);
