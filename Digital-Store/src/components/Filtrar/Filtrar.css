@@ -1,64 +1,41 @@
-.container {
-    display: flex;
-    color: #474747;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);
-    width: 308px;
-    height: 720px;
-    margin-left: 28px;
-    width: Hug (308px)px;
-top: 332px;
-left: 100px;
-gap: 20px;
-border-radius: 4px 0px 0px 0px;
-opacity: 0px;
+.Cont-filtro
+ {
+   
+   padding: 10px;
+   width: 300px;
 
 }
-
-.container .titulo {
-    font-size: 16px;
-    margin: 0 0 20px 0;
+.cont-Categorias{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.Cont-filtro h5{
+    color: var(--dark-gray-2);
+    font-weight: bold;
+}
+.Cont-filtro label{
+    color: var(--dark-gray-2);
 }
 
-.container .subtitulos {
-    margin: 20px 0 10px 0;
-    font-weight: 700;
-    font-size: 14px;
-}
 
-.container .colunaCheckbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px;
-}
 
-.container .colunaCheckbox hr {
-    line-height: 1px;
-    width: 248px;
-    margin: 0;
-}
 
-.container .colunaCheckbox input[type="checkbox"],
-.container .colunaCheckbox input[type="radio"] {
+
+.Cont-filtro
+ .colunaCheckbox input[type="checkbox"],
+.Cont-filtro
+ .colunaCheckbox input[type="radio"] {
     vertical-align: middle;
     margin: 0 10px 0 0;
     width: 22px;
     height: 22px;
 }
 
-.container .colunaCheckbox input[type="checkbox"]:checked,
-.container .colunaCheckbox input[type="radio"]:checked {
+.Cont-filtro
+ .colunaCheckbox input[type="checkbox"]:checked,
+.Cont-filtro
+ .colunaCheckbox input[type="radio"]:checked {
     accent-color: #C92071;
-}
-
-.container .colunaCheckbox div {
-    font-weight: 500;
-    font-size: 14px;
-    text-align: inherit;
-    height: 22px;
-    margin: 0 0 10px;
 }
 
 .checkCircle{
