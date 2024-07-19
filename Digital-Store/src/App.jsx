@@ -1,6 +1,6 @@
 
 import './App.css'
-import Layout from './pages/Layout'
+import Layout from './Pages/Layout'
 // import sapatoProduto from"./images/sapato_azul_Dstore.png"
 
 // import DetalhesProduto from './components/DetalhesProduto/DetalhesProduto'

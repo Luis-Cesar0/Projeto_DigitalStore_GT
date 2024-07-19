@@ -1,7 +1,7 @@
 import {Route, Routes} from 'react-router-dom';
-import Home from '../pages/Home';
-import ProductListingPage from '../pages/ProductListingPage'
-import ProductViewPage from '../pages/ProductViewPage'
+import Home from '../Pages/Home';
+import ProductListingPage from '../Pages/ProductListingPage'
+import ProductViewPage from '../Pages/ProductViewPage'
 
 
 export default function Rotas() {
