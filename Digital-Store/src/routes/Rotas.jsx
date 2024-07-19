@@ -1,8 +1,8 @@
 import {Route, Routes} from 'react-router-dom';
+import Home from '../pages/Home';
+import ProductListingPage from '../pages/ProductListingPage'
+import ProductViewPage from '../pages/ProductViewPage'
 
-import Home from '../Pages/Home';
-import ProductViewPage from '../Pages/ProductViewPage';
-import ProductListingPage from '../Pages/ProductListingPage';
 
 export default function Rotas() {
     return (
