@@ -5,6 +5,7 @@ import sapatoBege from '../images/sapato-bege.png'
 import sapatoMarron from '../images/sapato-marron.png'
 import sapatoRosa from '../images/sapato-rosa.png'
 import sapatoRoxo from '../images/sapato-roxo.png'
+import sapatoVenda from '../images/sapato_azul_Dstore.png'
 
 let ImgProduto = {
     imgBnaer:[imagemDoBaner,imagemDoBaner,imagemDoBaner,imagemDoBaner],
@@ -12,91 +13,108 @@ let ImgProduto = {
     produtos:[
         {
           name: "Nome do produto",
-          image: "img/sapato_azul_Dstore.png",
+          image: sapatoVenda,
           price: 200,
-          priceDiscount: 149.9
+          priceDiscount: 149.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
-        },
-        {
-          name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 400,
-          priceDiscount: 149.9
-        },
-        {
-          name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
           
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 400,
+          priceDiscount: 149.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
+          
+        },
+        {
+          name: "Nome do produto",
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
+        },
+        {
+          name: "Nome do produto",
+          image: sapatoVenda,
           price: 125,
-          priceDiscount: 35
+          priceDiscount: 35,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
+          image: sapatoVenda,
           price: 193,
-          priceDiscount: 85
+          priceDiscount: 85,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
+          image: sapatoVenda,
           price: 149.9,
-          priceDiscount: 49.9
+          priceDiscount: 49.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
+          image: sapatoVenda,
           price: 50,
-          priceDiscount: 25
+          priceDiscount: 25,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
+          image: sapatoVenda,
           price: 205,
           priceDiscount: 149,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
         },
         {
           name: "Nome do produto",
-          image: "public/sapato_azul_Dstore.png",
-          price: 49.9
+          image: sapatoVenda,
+          price: 49.9,
+          categoria: 'Tênis'
         },
         
         
