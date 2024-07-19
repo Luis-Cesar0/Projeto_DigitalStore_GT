@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from '../../images/sapato_perfil_carde_vendas.png';
+import img from '../../images/sapato-roxo.png';
 import './SlideProduto.css';
 
 export default function SlideProduto() {

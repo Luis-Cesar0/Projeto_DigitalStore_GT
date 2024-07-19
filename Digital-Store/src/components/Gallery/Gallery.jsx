@@ -2,18 +2,29 @@ import './Gallery.css'
 import fogo from '../../images/fogo.png'
 
 
-function Gallery({ClassName,Width,height,radius,showThumbs,images }) {
+function Gallery({ClassName ='galleria-promo',Width,height,radius,showThumbs,images }) {
   
   return (
     <div id="galeria" className={`carousel slide carousel-dark ${ClassName}`} style={
       {width: Width, height: height, borderRadius: radius}
     }>
         {/* container dos botões da parte debaixo do slide */}
-        <div className="carousel-indicators" id="cont-indicators">
+        <div className="carousel-indicators" id={showThumbs != true ? "cont-indicators" : "cont-preview"}>
           {/* Usando o map com o array de imagens para cria os botôes para cada slid */}
           {images.map((img, index) => {
             return(
-              <button type="button" data-bs-target="#galeria" data-bs-slide-to={index} className={index == 0 ? "indicador active" :"indicador"} aria-current="true" aria-label={`Slide ${index + 1}`} key={index}>{showThumbs == true && img}</button>
+              <button type="button" 
+              data-bs-target="#galeria" 
+              data-bs-slide-to={index} 
+              className={index == 0 ? "indicador active" :"indicador"} 
+              aria-current="true" 
+              aria-label={`Slide ${index + 1}`} 
+              key={index} 
+              style={{ borderRadius: radius}}>
+
+                {showThumbs == true && <img src={img} className='img-preview' alt='Imagem do Produto' style={{ borderRadius: radius}}/>}
+
+              </button>
             )
           })}
         </div>
