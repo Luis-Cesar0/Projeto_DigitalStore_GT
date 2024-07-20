@@ -1,9 +1,9 @@
 import React from 'react';
 import './Section.css';
 
-export default function Section({ title, titleAlign = 'left', children, link = '#' }) {
+export default function Section({ title, titleAlign = 'left', children, link = '#',Width}) {
     return (
-        <div className="section-externa">
+        <div className="section-externa" style={{width:Width}}>
             <div className="cont-title-link">
                 {title && titleAlign === 'left' && <h2 id='section-title'>{title}</h2>}
                 {title && titleAlign === 'center' && <h2 className="center" id='section-title'>{title}</h2>}
