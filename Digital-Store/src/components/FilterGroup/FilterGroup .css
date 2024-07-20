@@ -1,0 +1,36 @@
+
+.cont-Categorias{
+    margin-bottom: 10px;
+    padding: 5px;
+    color: var(--dark-gray-2) ;
+}
+.cont-Categorias h5{
+    font-weight: bold;
+}
+
+
+
+
+
+
+.cont-Categorias input[type="checkbox"],
+.cont-Categorias input[type="radio"] {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    width: 22px;
+    height: 22px;
+}
+
+.cont-Categorias input[type="checkbox"]:checked,
+.cont-Categorias input[type="radio"]:checked {
+    accent-color: #C92071;
+}
+
+.checkCircle{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #C92071;
+        
+}
+
