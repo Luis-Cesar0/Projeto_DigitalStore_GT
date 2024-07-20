@@ -3,7 +3,7 @@
 export default function ProductViewPage(){
     return(
         <>
-            <h1>testando pagina pode apagaer depois</h1>
+            <h1>testando pagina</h1>
         </>
     )
 }
