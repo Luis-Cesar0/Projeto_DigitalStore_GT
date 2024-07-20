@@ -1,53 +1,34 @@
 import Gallery from "../components/Gallery/Gallery"
+import ProdutosPromocao from "../components/ProdutosPromocao/ProdutosPromocao"
 import OfertaEspecial from "../components/OfertaEspecial/OfertaEspecial"
-import SapatoBaner from '../images/Sapato_Ornamento.png'
+import { contextoImgProduto } from "../Context/ContextImgProdut"
+import React, { useContext } from "react";
 import ProductiListing from "../components/ProductListing/ProductListing"
-import sapatoProduto from '../images/sapato_azul_Dstore.png'
-// import Sapatoroxo from '../images/sapato-roxo.png'
-// import Sapatobege from '../images/sapato-bege.png'
-// import Sapatorosa from '../images/sapato-rosa.png'
-// import Sapatomarron from '../images/sapato-marron.png'
-// import Sapatoamarelo from '../images/sapato-amarelo.png'
+import Section from "../components/Section/Section";
 
-// const listspatos = [Sapatoroxo,Sapatobege,Sapatorosa,Sapatomarron,Sapatoamarelo]
- const listaimg =[SapatoBaner,SapatoBaner,SapatoBaner,SapatoBaner,SapatoBaner]
- let produtos= [
-    {
-      name: "Nome do produto 1",
-      image: sapatoProduto,
-      price: 200,
-      priceDiscount: 149.9,
-      categoria: 'Tênis'
-    },
-    {
-      name: "Nome do produto 1",
-      image: sapatoProduto,
-      price: 200,
-      priceDiscount: 149.9,
-      categoria: 'Tênis'
-    },
-    {
-      name: "Nome do produto 1",
-      image: sapatoProduto,
-      price: 200,
-      priceDiscount: 149.9,
-      categoria: 'Tênis'
-    },
-    {
-      name: "Nome do produto 1",
-      image: sapatoProduto,
-      price: 200,
-      priceDiscount: 149.9,
-      categoria: 'Tênis'
-    },
 
-]
 export default function Home(){
+    const { imgProduto, setImgProduto } = useContext(contextoImgProduto);
+    let imagemBaner = imgProduto.imgBnaer
+    let listadestaque =[]
+    let index =0
+    for (let i = 0; i < 8; i++) {
+        listadestaque[i]= imgProduto.produtos[i]
+        
+        
+    }
+   
+    
     return(
-        <main>
-            <Gallery images={listaimg} />
-            <ProductiListing listProduto={produtos}/>
+        <div style={{backgroundColor: '#F9F8FE'}}>
+            <Gallery images={imagemBaner}/>
+            <Section title={'Coleções em destaque'}>
+                <ProdutosPromocao/>
+            </Section>
+            <Section title={'Produtos em alta'} link="2">
+                <ProductiListing listProduto={listadestaque}/>
+            </Section>
             <OfertaEspecial/>
-        </main>
+        </div>
     )
 }

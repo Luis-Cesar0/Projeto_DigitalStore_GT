@@ -45,7 +45,7 @@ function Gallery({ClassName ='galleria-promo',Width,height,radius,showThumbs,ima
                         <button className="btn-primary">Ver Oferta</button>
                       </div>}
 
-                    <img src={img} className='img-slide' alt='Imagem do Produto'/>
+                    <img src={img} className='img-slide' alt='Imagem do Produto' style={{width: 600}}/>
                   </div>
                 </div>
               )

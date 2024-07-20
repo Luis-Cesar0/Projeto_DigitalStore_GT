@@ -1,5 +1,26 @@
 
+.cardsEmDestaque{
+    width: 1239px;
+    margin: auto;
+}
 
+.cardsEmDestaque strong{
+    color: var(--dark-gray-2);
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin: 40px auto 20px auto;
+}
+
+.listaCardDestaque{
+    margin: 25px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1239px;
+    padding-bottom: 30px;
+
+}
 .cardDestaque {
     width: 405px;
     height: 251px;
@@ -39,7 +60,7 @@
 }
 
 .btnCard {
-    background: var(--white);
+    background-color: var(--white);
     width: 153px;
     height: 48px;
     border: none;
@@ -53,4 +74,33 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+
+.itensEmDestaque{
+    width: 712px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.imgColecoes{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: var(--light-gray-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.itensColecoes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-gray-2);
+    
 }
