@@ -1,5 +1,6 @@
 import './Gallery.css'
 import fogo from '../../images/fogo.png'
+import { Link } from 'react-router-dom';
 
 
 function Gallery({ClassName ='galleria-promo',Width,height,radius,showThumbs,images }) {
@@ -42,10 +43,10 @@ function Gallery({ClassName ='galleria-promo',Width,height,radius,showThumbs,ima
                         <p className="alerta-promo">Melhores ofertas personalizadas</p>
                         <h2>Queima de stoque Nike <img src={fogo} alt="fogo" /></h2>
                         <p className="detalhe-galeria">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                        <button className="btn-primary">Ver Oferta</button>
+                        <Link to={'produtos/:id'} className="btn-primary">Ver Oferta</Link>
                       </div>}
 
-                    <img src={img} className='img-slide' alt='Imagem do Produto' style={{width: 600}}/>
+                    <img src={img} className='img-slide' alt='Imagem do Produto' />
                   </div>
                 </div>
               )

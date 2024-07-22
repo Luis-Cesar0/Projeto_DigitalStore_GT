@@ -8,6 +8,9 @@ import Section from "../components/Section/Section";
 import Categorias from "../components/Categorias/Categorias";
 
 
+// estilo
+import './Home.css'
+
 export default function Home(){
     const { imgProduto, setImgProduto } = useContext(contextoImgProduto);
     let imagemBaner = imgProduto.imgBnaer
@@ -20,17 +23,20 @@ export default function Home(){
    
     
     return(
-        <div>
-            <Gallery images={imagemBaner}/>
-            <Section title={'Coleções em destaque'}>
-                <ProdutosPromocao/>
-            </Section>
-            <Section title={'Coleções em destaque'} titleAlign="center">
-                <Categorias/>
-            </Section>
-            <Section title={'Produtos em alta'} link="2">
-                <ProductiListing listProduto={listadestaque}/>
-            </Section>
+        <div className="container_home">
+            <Gallery images={imagemBaner} />
+            <div className="centralizar"> 
+                <Section title={'Coleções em destaque'} Width={1500}>
+                    <ProdutosPromocao/>
+                </Section>
+                <Section title={'Coleções em destaque'} titleAlign="center" Width={1500}>
+                    <Categorias/>
+                </Section>
+            
+                <Section title={'Produtos em alta'} link="2" Width={1500}>
+                    <ProductiListing listProduto={listadestaque} url={'produtos/:id'}/>
+                </Section>
+            </div>
             <OfertaEspecial/>
         </div>
     )

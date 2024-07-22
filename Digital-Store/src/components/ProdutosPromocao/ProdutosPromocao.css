@@ -62,12 +62,13 @@
 
 .btnCard {
     background-color: var(--white);
-    width: 153px;
-    height: 48px;
+    text-align: center;
+    padding: 10px 0px;
     border: none;
     border-radius: var(--borda-redonda);
     color: var(--primary);
     font-weight: bold;
+    text-decoration: none;
 }
 
 .imagemCard {

@@ -34,7 +34,7 @@ export default function Header() {
                   'listLinks listLinksConfirme' : 'listLinks'}
                   onClick={() => handleSelctLink(index)}
               >
-                <Link to={index === 0 ? '/' : `/${text.toLocaleLowerCase()}`}>{text}</Link>
+                <Link to={index === 0 ? "/" : `/${text.toLocaleLowerCase()}`}>{text}</Link>
               </li>
             )
           })}

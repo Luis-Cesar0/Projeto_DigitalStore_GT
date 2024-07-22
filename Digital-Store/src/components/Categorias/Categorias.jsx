@@ -1,4 +1,8 @@
+// recuços
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+//imagens 
 import Camisetas from '../../images/camisetas.png'
 import Calcas from '../../images/calcas.png'
 import Headphones from '../../images/headphones.png'
@@ -8,7 +12,11 @@ import CalcasRosa from '../../images/calcas-rosa.png'
 import HeadphonesRosa from '../../images/headphones-rosa.png'
 import TenisRosa from '../../images/tenis-rosa.png'
 
+// estilo
 import './Categorias.css'
+
+
+
 export default function Categorias(){
     const destaques = [
         {
@@ -57,14 +65,16 @@ export default function Categorias(){
             
             <div className="itensColecoes" key={index}>
                 
-                <div className="imgColecoes" >
-                    <img src={imagensSrc[index]} 
-                    alt={destaque.titulo}
-                    onMouseEnter={() => handleMouseEntra(index, destaque.imgRosa)}
-                    onMouseLeave={() => handleMouseSaiu(index, destaque.img)}
-                    id={`imgItem${index}`}
-                    />
-                </div>
+                <Link to={'produtos'}  >
+                    <div className="imgColecoes" >
+                        <img src={imagensSrc[index]} 
+                        alt={destaque.titulo}
+                        onMouseEnter={() => handleMouseEntra(index, destaque.imgRosa)}
+                        onMouseLeave={() => handleMouseSaiu(index, destaque.img)}
+                        id={`imgItem${index}`}
+                        />
+                    </div>
+                </Link>
                 <p>{destaque.titulo}</p>
             </div>
         ))}

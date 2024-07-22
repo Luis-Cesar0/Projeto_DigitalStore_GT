@@ -33,6 +33,7 @@ export default function ProductListingPage() {
             {text: "Novo", value: "novo"},
             {text: "Usado", value: "usado"},
     ]
+
     const { imgProduto} = useContext(contextoImgProduto);
     let Produtos = imgProduto.produtos
    
@@ -58,8 +59,8 @@ export default function ProductListingPage() {
                         <Filtrar listaOpcos={Estado} titulo={'Estado'} Radio RadioName={'teste'}/>
                     </div>
 
-                    <Section Width={1300}>
-                        <ProductiListing listProduto={Produtos}/>
+                    <Section Width={1500}>
+                        <ProductiListing listProduto={Produtos} url={':id'}/>
                     </Section>
                </div>
             
