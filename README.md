@@ -79,7 +79,15 @@ Aqui estão algumas capturas de tela do projeto:
    ```sh
    npm install
    ```
-4. Inicie o servidor de desenvolvimento:
+4. Inatale as bibliotecas:`
+ ```sh
+   npm install react react-dom
+   npm install vite
+   npm install bootstrap bootstrap-icons
+   npm install react-router-dom
+   ```
+
+5. Inicie o servidor de desenvolvimento:
    ```sh
    npm run dev
    ```
