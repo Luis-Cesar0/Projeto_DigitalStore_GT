@@ -11,11 +11,11 @@
      align-items: center;
  }
  .texto-galeria{
-     width: 400px;
+     width: 500px;
      color: var(--dark-gray);
  }
  .texto-galeria h2{
-     font-size: 3rem;
+     font-size: 4rem;
      font-weight: bold;
  }
  .alerta-promo{
@@ -26,11 +26,12 @@
  }
  .btn-primary{
      background-color: var(--primary);
-     padding: 8px 20px;
+     padding: 10px 50px;
      border-radius: 8px;
      border: none;
      font-size: 16px;
      color: var(--white);
+     text-decoration: none;
  }
  /* indicador */
  #cont-indicators .indicador{
@@ -75,7 +76,4 @@
 #cont-preview  .active{
     background-color:  var(--primary);
 }
-#cont-preview .indicador img{
-    width: 97%;
-    height: 97%;
-}
+

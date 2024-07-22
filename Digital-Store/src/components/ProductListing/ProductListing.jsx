@@ -3,13 +3,13 @@ import './ProductListing.css'
 import { Link } from 'react-router-dom'
 
 
-export default function ProductiListing({listProduto}) {
+export default function ProductiListing({listProduto ,url}) {
     return (
         <div className="ProductiListing">
             {
                 listProduto.map((item,index)=>{
                     return(
-                        <Link to={'produtos/:id'}  key={index} className='linkProductCard'>
+                        <Link to={url}  key={index} className='linkProductCard'>
                             <ProductCard img={item.image} 
                             nome={item.name} 
                             preco={item.price} 

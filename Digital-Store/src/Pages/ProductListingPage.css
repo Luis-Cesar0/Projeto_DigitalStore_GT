@@ -9,7 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 20px;
+    width: 100%;
+    gap: 8px;
 }
 .cont-orden{
     display: flex;
