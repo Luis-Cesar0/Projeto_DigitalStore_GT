@@ -45,6 +45,7 @@
  #cont-indicators .active{
      background-color: var(--primary);
  }
+ 
  /* ClassName centralizado */
 
 .centro #container-galeria{
@@ -56,22 +57,31 @@
     
 }
 /* preview das iamgnes*/
+.principal-preview{
+    width: 1000px;
+}
+.principal-preview .img-slide{
+    width: 500px;
+}
 #cont-preview {
     bottom: -125px;
 }
 
 #cont-preview .indicador{
-    width: 200px;
+    width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    
     opacity: 1;
     
     
+}
+.img-preview{
+    width: 95%;
+    height: 95%;
 }
 #cont-preview  .active{
     background-color:  var(--primary);

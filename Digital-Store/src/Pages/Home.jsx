@@ -1,8 +1,10 @@
+import { contextoImgProduto } from "../Context/ContextImgProdut"
+import { useContext } from "react";
+
+
 import Gallery from "../components/Gallery/Gallery"
 import ProdutosPromocao from "../components/ProdutosPromocao/ProdutosPromocao"
 import OfertaEspecial from "../components/OfertaEspecial/OfertaEspecial"
-import { contextoImgProduto } from "../Context/ContextImgProdut"
-import { useContext } from "react";
 import ProductiListing from "../components/ProductListing/ProductListing"
 import Section from "../components/Section/Section";
 import Categorias from "../components/Categorias/Categorias";
