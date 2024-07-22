@@ -52,7 +52,7 @@ export default function ProductListingPage() {
           
                <div className="cont-lista-filtro">
                     <div className="cont-filtro">
-                        <p>Filtrar por</p>
+                        <p>Filtrar por:</p>
                         <Filtrar listaOpcos={Marca} titulo={'Marka'}/>
                         <Filtrar listaOpcos={Categoria} titulo={'Categoria'}/>
                         <Filtrar listaOpcos={Genero} titulo={'Gênero'}/>
