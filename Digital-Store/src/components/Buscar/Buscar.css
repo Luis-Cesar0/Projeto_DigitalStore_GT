@@ -1,0 +1,26 @@
+#form-search-nav{
+    
+    background-color: hsla(0, 0%, 40%, 0.040);
+    width: 55%;
+    border-radius: var(--borda-redonda);
+}
+
+#pesProduto{
+    width: 95%;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: var(--borda-redonda);
+}
+#pesProduto:focus{
+    border: none;
+    outline: none;
+}
+#btnPesquisa{
+    font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--dark-gray-3);
+    border: none;
+    border-radius: var(--borda-redonda);
+}

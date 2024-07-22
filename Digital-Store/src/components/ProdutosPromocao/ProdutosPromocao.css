@@ -10,6 +10,7 @@
     font-size: 24px;
     display: block;
     margin: 40px auto 20px auto;
+    
 }
 
 .listaCardDestaque{
@@ -77,30 +78,3 @@
 }
 
 
-.itensEmDestaque{
-    width: 712px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 30px;
-}
-
-.imgColecoes{
-    width: 104px;
-    height: 104px;
-    border-radius: 50%;
-    background: var(--light-gray-3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.itensColecoes{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: bold;
-    color: var(--dark-gray-2);
-    
-}

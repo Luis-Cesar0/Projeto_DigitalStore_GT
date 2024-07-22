@@ -1,0 +1,31 @@
+.itensEmDestaque{
+    width: 712px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin: 70px 0px;
+     
+}
+
+.imgColecoes{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.itensColecoes{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-gray-2);
+    
+}

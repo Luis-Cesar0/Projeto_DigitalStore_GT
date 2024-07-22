@@ -6,10 +6,13 @@ import ProductViewPage from '../Pages/ProductViewPage'
 
 export default function Rotas() {
     return (
-        <Routes>
-            <Route path="/"  element={<Home/>} />
-            <Route path="produtos" element={<ProductListingPage/>} />
-            <Route path="produtos/:id" element={<ProductViewPage/>} />
-        </Routes>
+       <>
+            <Routes>
+                <Route path="/"  element={<Home/>} />
+                <Route path="home"  element={<Home/>} />
+                <Route path="produtos" element={<ProductListingPage/>} />
+                <Route path="produtos/:id" element={<ProductViewPage/>} />
+            </Routes>
+       </>
     );
 }

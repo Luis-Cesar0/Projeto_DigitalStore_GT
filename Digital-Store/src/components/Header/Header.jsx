@@ -3,6 +3,7 @@ import Logo from '../Logo/Logo'
 import  carinhoCompras from '../../images/carinho-compra-2.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Buscar from '../Buscar/Buscar'
 
 export default function Header() {
   let [selectLink,setSelctLink] = useState(0)
@@ -14,10 +15,7 @@ export default function Header() {
     <nav>
       <div id="top-nav" className="nav-filhos d-flex justify-content-between align-items-center">
             <Logo/>
-        <form action="#" method="get" id="form-search-nav" >
-          <input type="search" name="pesProduto" id="pesProduto"  placeholder="Pesquisar produto..."/>
-          <button type="submit" className="nav-btn " id="btnPesquisa"><i className="bi bi-search"></i></button>
-        </form>
+        <Buscar/>
        <div id="cadEntraCarinho">
           <a href="#" className="nav-btn " id="link_cadastro">Cadastre-se</a>
           <a href="#" className="nav-btn btn_primary" id="btn_entra">Entrar</a>

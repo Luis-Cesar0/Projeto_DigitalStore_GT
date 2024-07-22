@@ -12,6 +12,7 @@ header{
     margin-top: 1%;
     margin-bottom: 2%;
 }
+/* barra de pesquisa */
 #form-search-nav{
     
     background-color: hsla(0, 0%, 40%, 0.040);
@@ -33,7 +34,7 @@ header{
     border: none;
     border-radius: var(--borda-redonda);
 }
-
+/* botão de cadastro */
 #link_cadastro{
     text-decoration: none;
     border-bottom: 1px solid var(--dark-gray-2);

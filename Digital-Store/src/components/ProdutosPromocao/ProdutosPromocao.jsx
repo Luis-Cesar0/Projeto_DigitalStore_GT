@@ -2,10 +2,7 @@ import './ProdutosPromocao.css'
 import CamisaSupreme from '../../images/camisa_supreme_carde.png'
 import TenisAdidas from '../../images/sapato_preto_carde.png'
 import BeatBass from '../../images/foneDeOuvido.png'
-import Camisetas from '../../images/camisetas.png'
-import Calcas from '../../images/calcas.png'
-import Headphones from '../../images/headphones.png'
-import Tenis from '../../images/tenis.png'
+
 
 const ProdutosPromocao = () => {
     const cards = [
@@ -29,31 +26,7 @@ const ProdutosPromocao = () => {
         }
     ];
 
-    const destaques = [
-        {
-            img:Camisetas,
-            titulo:'Camisetas'
-        },
-        {
-            img:Calcas,
-            titulo:'Calças'
-        },
-        {
-            img:Calcas,
-            titulo:'Bonés'
-        },
-        {
-            img:Headphones,
-            titulo:'Headphones'
-        },
-        {
-            img:Tenis,
-            titulo:'Tênis'
-        }
-
-
-    ]
-
+ 
     return (
         <div className="cardsEmDestaque">
             <div className="listaCardDestaque">
@@ -70,17 +43,7 @@ const ProdutosPromocao = () => {
                     </div>
                 ))}
             </div>
-            <strong style={{ textAlign:'center'}}>Coleções em destaque</strong>
-            <div className="itensEmDestaque">
-            {destaques.map((destaque) => (
-                <div className="itensColecoes">
-                    <div className="imgColecoes">
-                        <img src={destaque.img} alt={destaque.titulo}/>
-                    </div>
-                    <p>{destaque.titulo}</p>
-                </div>
-            ))}
-            </div>
+           
         </div>
     );
 }

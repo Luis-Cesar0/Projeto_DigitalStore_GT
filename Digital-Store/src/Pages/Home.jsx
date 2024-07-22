@@ -5,6 +5,7 @@ import { contextoImgProduto } from "../Context/ContextImgProdut"
 import { useContext } from "react";
 import ProductiListing from "../components/ProductListing/ProductListing"
 import Section from "../components/Section/Section";
+import Categorias from "../components/Categorias/Categorias";
 
 
 export default function Home(){
@@ -23,6 +24,9 @@ export default function Home(){
             <Gallery images={imagemBaner}/>
             <Section title={'Coleções em destaque'}>
                 <ProdutosPromocao/>
+            </Section>
+            <Section title={'Coleções em destaque'} titleAlign="center">
+                <Categorias/>
             </Section>
             <Section title={'Produtos em alta'} link="2">
                 <ProductiListing listProduto={listadestaque}/>
