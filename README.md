@@ -7,6 +7,15 @@ O projeto Digital Store é uma aplicação web desenvolvida em React que simula 
 
 ---
 
+
+#### Integrantes do Projeto
+
+- **Nome 1**: Luis César
+- **Nome 2**: Natanael Neves
+- **Nome 3**: Lucas Duarte
+
+---
+
 #### Bibliotecas Utilizadas
 
 1. **React**: Biblioteca principal para construção da interface de usuário.
@@ -73,13 +82,6 @@ Aqui estão algumas capturas de tela do projeto:
    npm run dev
    ```
 
----
-
-#### Integrantes do Projeto
-
-- **Nome 1**: Luis César
-- **Nome 2**: Natanael Neves
-- **Nome 3**: Lucas Duarte
 
 ---
 
