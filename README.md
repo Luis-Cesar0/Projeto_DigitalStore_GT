@@ -80,7 +80,7 @@ Aqui estão algumas capturas de tela do projeto:
    npm install
    ```
 4. Inatale as bibliotecas:`
- ```sh
+   ```sh
    npm install react react-dom
    npm install vite
    npm install bootstrap bootstrap-icons
