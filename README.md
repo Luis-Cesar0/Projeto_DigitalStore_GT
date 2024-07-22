@@ -50,7 +50,7 @@ O projeto Digital Store é uma aplicação web desenvolvida em React que simula 
 Aqui estão algumas capturas de tela do projeto:
 
 1. **Página Inicial**
-   ![Página Inicial](imagensProjeto/home1.png)
+   ![Página Inicial](imagensProjeto/home.png)
    ![Página Inicial](imagensProjeto/home2.png)
    ![Página Inicial](imagensProjeto/home3.png)
    ![Página Inicial](imagensProjeto/home4.png)
