@@ -87,4 +87,4 @@ Aqui estão algumas capturas de tela do projeto:
 
 ---
 
-Este README fornece uma visão geral abrangente do projeto Digital Store, incluindo sua descrição, bibliotecas utilizadas, estrutura dos componentes, páginas, imagens do projeto, instruções de execução, informações de contribuição, licença e os integrantes do projeto.
+Obrigado pela visita!
