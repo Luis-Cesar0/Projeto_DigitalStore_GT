@@ -10,7 +10,7 @@ export default function PaginaemConstrucao() {
                     <img src={pagconstru} alt="Página em construção" />
 
                     <h1>Página em construção!</h1>
-                    
+                    <h3>Estamos preparando para melhorar a sua experiência!</h3>                 
                 </div>
             </div>
   );
