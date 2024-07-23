@@ -60,8 +60,8 @@ Aqui estão algumas capturas de tela do projeto:
    ![Lista de Produtos](imagensProjeto/productlistining.png)
 
 3. **Detalhe do Produto**
-   ![Detalhe do Produto](./images/product_detail.png)
-
+   ![Detalhe do Produto](imagensProjeto/produto.png)
+   ![Detalhe do Produto](imagensProjeto/produto1.png)
 
 ---
 
