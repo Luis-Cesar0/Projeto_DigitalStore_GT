@@ -9,7 +9,7 @@ import sapatoVenda from '../images/sapato_azul_Dstore.png'
 
 let ImgProduto = {
     imgBnaer:[imagemDoBaner,imagemDoBaner,imagemDoBaner,imagemDoBaner],
-    imgDetalhesProdutos:[sapatoAmarelo,sapatoBege,sapatoMarron,sapatoRosa,sapatoRoxo],
+    imgDetalhesProdutos:[sapatoRoxo,sapatoAmarelo,sapatoRosa,sapatoMarron,sapatoBege],
     produtos:[
         {
           name: "Nome do produto",

@@ -56,19 +56,25 @@
     
 }
 /* preview das iamgnes*/
+.container-preview {
+    width: 1000px;
+}
 #cont-preview {
     bottom: -125px;
 }
+.img-preview{
+    width: 95%;
+    height: 95%;
+}
 
 #cont-preview .indicador{
-    width: 200px;
+    width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    
     opacity: 1;
     
     
