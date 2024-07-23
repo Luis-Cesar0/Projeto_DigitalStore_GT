@@ -13,6 +13,8 @@ export default function Rotas() {
                 <Route path="produtos/:id" element={<ProductViewPage/>} />
                 <Route path="categoria" element={<PaginaemConstrucao/>} />
                 <Route path="meus pedidos" element={<PaginaemConstrucao/>} />
+                <Route path='2' element={<ProductListingPage/>} />
+                <Route path='produtos/2' element={<ProductListingPage/>} />
             </Routes>
        </>
     );
