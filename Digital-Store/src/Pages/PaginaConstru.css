@@ -1,0 +1,37 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  
+
+
+}
+
+.container h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: "Inter", sans-serif;
+    color: #C92071;
+    text-align: center;
+}
+
+ .container h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: "Inter", sans-serif;
+    color: #F6AA1C;
+    text-align: center;}
+
+.container img{
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+
