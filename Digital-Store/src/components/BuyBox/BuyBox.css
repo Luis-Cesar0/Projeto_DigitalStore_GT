@@ -59,7 +59,7 @@
     border-radius: 4px;
     
 }
-.tamanho .actiSize{
+.tamanho .actiBtn{
     background-color: var(--primary);
     color: #fff;
 }
@@ -72,12 +72,13 @@
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    padding: 3px;
     border: none;
        
 }
 .cores p{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     border-radius: 50%;
 }
@@ -93,7 +94,7 @@
 .roxo{
     background-color: #6D70B7;
 }
-.cores .acticolor{
+.cores .actiColor{
     border: 2px solid var(--primary);
 }
 /* botão de compra */
