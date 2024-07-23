@@ -60,12 +60,13 @@
 .container-preview {
     width: 1000px;
 }
+
 #cont-preview {
     bottom: -125px;
 }
 .img-preview{
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
 }
 
 #cont-preview .indicador{

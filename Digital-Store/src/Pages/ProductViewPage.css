@@ -1,4 +1,28 @@
-.princial-detalhes{
+.principal-detlhes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.caminho{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-left:200px;
+    margin-bottom: 30px;
+}
+.caminho .caminhoLink{
+    color: var(--dark-gray-2);
+    text-decoration: none;
+}
+.Homelink{
+    font-weight: bold;
+}
+
+.detalhes{
     display: flex;
     margin-bottom: 200px;
 }

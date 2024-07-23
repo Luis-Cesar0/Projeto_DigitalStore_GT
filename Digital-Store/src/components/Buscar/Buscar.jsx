@@ -17,6 +17,7 @@ export default function Buscar(){
         <form onSubmit={handleSubmit}  id="form-search-nav" >
             <input type="search" name="pesProduto" id="pesProduto"  placeholder="Pesquisar produto..." onChange={(e) => {
                 let paginas = e.target.value.toLowerCase()
+                paginas == 'home' ? paginas= '/ ' : paginas
                 setSearchTerm(paginas)
             }} />
             <button type="submit" className="nav-btn " id="btnPesquisa"><i className="bi bi-search"></i></button>
