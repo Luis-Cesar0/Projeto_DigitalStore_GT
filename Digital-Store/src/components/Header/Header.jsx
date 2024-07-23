@@ -17,11 +17,11 @@ export default function Header() {
             <Logo/>
         <Buscar/>
        <div id="cadEntraCarinho">
-          <a href="#" className="nav-btn " id="link_cadastro">Cadastre-se</a>
-          <a href="#" className="nav-btn btn_primary" id="btn_entra">Entrar</a>
-          <a href="#" id="btn-carrinho ">
+          <Link to={'cadastro'} className="nav-btn " id="link_cadastro">Cadastre-se</Link>
+          <Link to={'loguin'} className="nav-btn btn_primary" id="btn_entra">Entrar</Link>
+          <Link to={'carrinho'} id="btn-carrinho ">
             <img src={carinhoCompras} alt="carinho De compras"/>
-          </a>
+          </Link>
        </div>
       </div>
       <div id="bot-nav" className="nav-filhos ">
