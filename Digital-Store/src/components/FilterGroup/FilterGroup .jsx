@@ -13,7 +13,7 @@ export default function FilterGroup ({listaOpcos,Radio,titulo}) {
                         listaOpcos.map((opcao, index) => {
                             return (
                                 <div key={index}>
-                                    <input type="checkbox" value={opcao.value} name={opcao.value} />
+                                    <input type="checkbox" value={opcao.value} name={opcao.value} id={opcao.value} />
                                     <label htmlFor={opcao.value}>{opcao.text}</label>
                                 </div>
                             )

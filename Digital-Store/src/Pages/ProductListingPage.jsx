@@ -13,7 +13,7 @@ import './ProductListingPage.css'
 export default function ProductListingPage() {
     let Marca =[
             {text: "Adiddas", value: "Adiddas"},
-            {text: "Calenciaga"},
+            {text: "Calenciaga" ,value: "Calenciaga"},
             {text: "K-Swiss", value: "KSwiss"},
             {text: "Nike", value: "Nike"},
             {text: "Puma", value: "Puma"},        
