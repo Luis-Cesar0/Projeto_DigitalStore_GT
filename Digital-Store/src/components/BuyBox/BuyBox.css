@@ -1,0 +1,107 @@
+.BuyBox{
+    width: 600px;
+    height: 00px;
+}
+.BuyBox h5{
+    color: var(--light-gray);
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* titulo,marca,categoria,ref */
+.BoxTextReference h1{
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+.cont-catMarcaRef{
+    display: flex;
+    gap: 5px;
+}
+/* Estrelas */
+.qtdEstrelas{
+    margin: 5px 10px;
+    background-color: var(--warning) ;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.qtdAvalia{
+    color: var(--light-gray);
+}
+
+/* preço e preço com desconto */
+.cont-preceDesc{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cont-preceDesc .precodesc{
+    font-size: 2rem;
+    color: var(--dark-gray-2);
+}
+.cont-preceDesc .preco{
+    color: var(--light-gray-2);
+    text-decoration: line-through;
+}
+.amarelo{
+    color: var(--warning);
+}
+
+.tamanho{
+    margin: 20px 0px;
+}
+.tamanho button{
+    padding: 10px 13px;
+    font-weight: bold;
+    color: var(--dark-gray-2);
+    border: 0.5px solid var(--light-gray-2);
+    margin-right: 10px;
+    border-radius: 4px;
+    
+}
+.tamanho .actiSize{
+    background-color: var(--primary);
+    color: #fff;
+}
+/* cores */
+.cores{
+    margin: 20px 0px;
+}
+.cores button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+       
+}
+.cores p{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-radius: 50%;
+}
+.azul{
+    background-color: #6FEEFF;
+}
+.vermelho{
+    background-color: #FF6969;
+}
+.cinza{
+    background-color: #5E5E5E;
+}
+.roxo{
+    background-color: #6D70B7;
+}
+.cores .acticolor{
+    border: 2px solid var(--primary);
+}
+/* botão de compra */
+.BuyBox .btncomprar{
+    text-decoration: none;
+    background-color: var(--warning);
+    color: #fff;
+    padding: 13px 50px;
+    border-radius: 8px;
+    
+}

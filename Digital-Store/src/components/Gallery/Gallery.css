@@ -57,14 +57,15 @@
     
 }
 /* preview das iamgnes*/
-.principal-preview{
+.container-preview {
     width: 1000px;
-}
-.principal-preview .img-slide{
-    width: 500px;
 }
 #cont-preview {
     bottom: -125px;
+}
+.img-preview{
+    width: 95%;
+    height: 95%;
 }
 
 #cont-preview .indicador{
