@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import './Buscar.css'
 
 export default function Buscar(){
-    const [searchTerm, setSearchTerm] = useState('');
+    const [searchPage, setSearchPage] = useState('');
     const pesquisa = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (searchTerm.trim()) {
-            pesquisa(`/${searchTerm}`);
+        if (searchPage.trim()) {
+            pesquisa(`${searchPage}`);
         }
     };
     return(
@@ -18,7 +18,7 @@ export default function Buscar(){
             <input type="search" name="pesProduto" id="pesProduto"  placeholder="Pesquisar produto..." onChange={(e) => {
                 let paginas = e.target.value.toLowerCase()
                 paginas == 'home' ? paginas= '/ ' : paginas
-                setSearchTerm(paginas)
+                setSearchPage(paginas)
             }} />
             <button type="submit" className="nav-btn " id="btnPesquisa"><i className="bi bi-search"></i></button>
         </form>
