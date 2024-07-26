@@ -31,6 +31,7 @@ const ProdutosPromocao = () => {
     return (
         <div className="cardsEmDestaque">
             <div className="listaCardDestaque">
+                {/* faz um loop para exibir os produtos em destaque */}
                 {cards.map((produto, index) => (
                     <div key={index} className="cardDestaque">
                         <div className="infoCard">
@@ -43,6 +44,7 @@ const ProdutosPromocao = () => {
                         </div>
                     </div>
                 ))}
+
             </div>
            
         </div>

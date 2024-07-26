@@ -6,9 +6,11 @@ export default function BuyBox({name,reference,Marca,categoria,stars,rating,prec
 
     const [activeColor, setActiveColor] = useState('azul');
 
+    // muda a cor selecionada na buybox
     const handleClickColor= (color) => {
         setActiveColor(color);
     };
+    // muda a o tamanho do calçado selecionado na da bybox
     const [activeBtn, setActiveBtn] = useState('39');
 
     const handleClickBtn = (numero) => {
@@ -39,7 +41,7 @@ export default function BuyBox({name,reference,Marca,categoria,stars,rating,prec
                     <span className='qtdEstrelas'>{stars}<i className="bi bi-star-fill"></i></span>
                     <span className='qtdAvalia'>{`(${rating} avaliações)`}</span>
                 </div>
-                
+                    {/* decide em qual formato o preço vai aparecer */}
                     {
                         priceDiscount ? 
                         <div className='cont-preceDesc'>

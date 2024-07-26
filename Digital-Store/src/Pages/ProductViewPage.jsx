@@ -15,9 +15,11 @@ import Section from "../components/Section/Section";
 import './ProductViewPage.css'
 
 export default function ProductViewPage(){
+    // puxa as imagens dos produto
     const { imgProduto, setImgProduto } = useContext(contextoImgProduto);
     let imagemBaner = imgProduto.imgDetalhesProdutos
-
+    
+    // limita a quantidade de produtos
     let listadestaque =[]
     for (let i = 0; i < 4; i++) {
         listadestaque[i]= imgProduto.produtos[i]
@@ -36,8 +38,10 @@ export default function ProductViewPage(){
                 <span>/</span>
                 <Link to={'/produtos'} className="NomeLink caminhoLink "> Tênis Nike Revolution 6 Next Nature Masculino</Link>
               </div>
+
             <div className="detalhes">
                 <Gallery images={imagemBaner} showThumbs ClassName="container-preview" radius={5} height={600}/>
+                {/* cira boybox com as especificações necessárias */}
                 <BuyBox stars={4.7} 
                 categoria={'Casual'} 
                 Marca={'Nike'} 
@@ -47,6 +51,7 @@ export default function ProductViewPage(){
                 priceDiscount={119} 
                 rating={90} 
                 reference={'38416711'}/>
+
             </div>
             <Section title={'Produtos em alta'} link="2" Width={1800}>
                     <ProductiListing listProduto={listadestaque} url={'/produtos'}/>

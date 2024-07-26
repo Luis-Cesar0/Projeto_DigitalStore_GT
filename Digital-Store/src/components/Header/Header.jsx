@@ -9,6 +9,7 @@ export default function Header() {
   const location = useLocation();
   const [selectLink, setSelectLink] = useState(0);
 
+  // verifica a url para aplicar a className listLinksConfirme ao elemento que coresponde a url
   useEffect(() => {
     let path = location.pathname;
     path == '/produtos/:id' ? path ='/produtos': path
@@ -16,9 +17,6 @@ export default function Header() {
     setSelectLink(index !== -1 ? index : 0);
   }, [location]);
 
-  function handleSelectLink(index) {
-    setSelectLink(index);
-  }
 
   return (
     <header>
@@ -41,7 +39,6 @@ export default function Header() {
                 <li
                   key={index}
                   className={selectLink === index ? 'listLinks listLinksConfirme' : 'listLinks'}
-                  onClick={() => handleSelectLink(index)}
                 >
                   <Link to={index === 0 ? "/" : `/${text.toLowerCase().replace(' ','-')}`}>{text}</Link>
                 </li>

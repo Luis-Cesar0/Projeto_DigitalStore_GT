@@ -11,6 +11,7 @@ import './ProductListingPage.css'
 
 
 export default function ProductListingPage() {
+    // categorias do filtro
     let Marca =[
             {text: "Adiddas", value: "Adiddas"},
             {text: "Calenciaga" ,value: "Calenciaga"},
@@ -34,6 +35,7 @@ export default function ProductListingPage() {
             {text: "Usado", value: "usado"},
     ]
 
+    // puxa os produtos dentro do contexto
     const { imgProduto} = useContext(contextoImgProduto);
     let Produtos = imgProduto.produtos
    

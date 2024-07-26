@@ -14,9 +14,11 @@ import Categorias from "../components/Categorias/Categorias";
 import './Home.css'
 
 export default function Home(){
+    // puxa os produtos e as imagens do contexto
     const { imgProduto, setImgProduto } = useContext(contextoImgProduto);
     let imagemBaner = imgProduto.imgBnaer
     let listadestaque =[]
+    // limita a quantidade de prodtuos
     for (let i = 0; i < 8; i++) {
         listadestaque[i]= imgProduto.produtos[i]
         
