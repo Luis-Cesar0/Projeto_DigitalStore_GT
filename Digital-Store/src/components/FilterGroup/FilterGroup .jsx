@@ -5,7 +5,7 @@ export default function FilterGroup ({listaOpcos,Radio,titulo}) {
     return (
                <>
                 
-                   
+                {/* muda o filtro para botões de raido ou checkbox */}
                 {Radio != true ? 
                     <div className='cont-Categorias' >
                         <h5 className="subtitulos">{titulo}</h5>

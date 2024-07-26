@@ -36,13 +36,17 @@
 .descricaoOferta strong{
     color: var(--primary);
 }
-
-.descricaoOferta input{
+.cont-link-oferta{
+    margin-top: 10px;
     height: 40px;
-    width: 200px;
+}
+.cont-link-oferta  .verOferta{
+    padding: 10px 60px;
+    text-align: center;
     font-weight: 500;
     border: none;
     border-radius: var(--borda-redonda);
     color: var(--light-gray-3);
     background: var(--primary);
+    text-decoration: none;
 }

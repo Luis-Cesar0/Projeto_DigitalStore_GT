@@ -3,7 +3,9 @@ import './ProductCard.css'
 
 export default function ProductCard({img, nome, preco,precoDesconto='vazio',categoria} )
 {
+    // cacula a porcentagem do desconto usado o preço e o preço com desconto
     let descporcento= ((preco - precoDesconto) *100)/preco
+    // a imagem do produto dentro da div
     let imgBackgraud ={
         backgroundImage: `url(${img})`
     }

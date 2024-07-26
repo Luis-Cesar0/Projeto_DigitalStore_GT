@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 export default function ProductiListing({listProduto ,url}) {
     return (
         <div className="ProductiListing">
+            {/* faz um loop para gera os card dentro da lista de cardes*/}
             {
                 listProduto.map((item,index)=>{
                     return(

@@ -47,6 +47,7 @@ export default function Categorias(){
     ]
     const [imagensSrc, setImagensSrc] = useState(destaques.map(destaque => destaque.img));
 
+    // efeito que muda a cor da imagem quadno o mouse passar
     const handleMouseEntra = (index, imgEntra) => {
         const novasImagens = [...imagensSrc];
         novasImagens[index] = imgEntra;

@@ -11,7 +11,7 @@ function Gallery({ClassName ='galleria-promo',Width,height,radius,showThumbs,ima
     }>
         {/* container dos botões da parte debaixo do slide */}
         <div className="carousel-indicators" id={showThumbs != true ? "cont-indicators" : "cont-preview"}>
-          {/* Usando o map com o array de imagens para cria os botôes para cada slid */}
+          {/* Usando o map com o array de imagens para cria os botôes para cada slide */}
           {images.map((img, index) => {
             return(
               <button type="button" 

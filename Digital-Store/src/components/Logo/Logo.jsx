@@ -5,7 +5,7 @@ import logoBranca from '../../images/logo_DStore_branca.png';
 const Logo = ({cor = 'rosa'}) => {
     return (
       <>
-          
+          {/* troca a cor da logo,dependedno do paramento passado */}
           {cor == 'branca' && <img src={logoBranca} alt="Digital Store Logo" style={{ 
    
              left: '0%',

@@ -13,6 +13,7 @@
     border: none;
     border-radius: var(--borda-redonda);
 }
+  
 #pesProduto:focus{
     border: none;
     outline: none;
