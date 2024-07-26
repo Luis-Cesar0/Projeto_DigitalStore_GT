@@ -49,7 +49,7 @@ export default function ProductViewPage(){
                 reference={'38416711'}/>
             </div>
             <Section title={'Produtos em alta'} link="2" Width={1800}>
-                    <ProductiListing listProduto={listadestaque} url={'produtos/:id'}/>
+                    <ProductiListing listProduto={listadestaque} url={'/produtos'}/>
             </Section>
         </div>
 
