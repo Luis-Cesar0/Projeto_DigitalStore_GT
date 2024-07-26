@@ -35,7 +35,7 @@ export default function Home(){
                     <Categorias/>
                 </Section>
             
-                <Section title={'Produtos em alta'} link="2" Width={1500}>
+                <Section title={'Produtos em alta'} link="produtos" Width={1500}>
                     <ProductiListing listProduto={listadestaque} url={'produtos/:id'}/>
                 </Section>
             </div>
