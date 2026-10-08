@@ -17,7 +17,7 @@
     margin-bottom: 20px;
 }
 
-#section-title  {
+.cont-title-link h2 {
     color: var(--dark-gray-2);
     font-size: 24px;
     font-weight: bold;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -13,15 +12,15 @@ const Footer = () => {
         { text: "Wishlist", link: "/wishlist" },
         { text: "Blog", link: "/blog" },
         { text: "Trabalhe conosco", link: "/careers" },
-        { text: "Meus Pedidos", link: "/orders" }
+        { text: "Meus Pedidos", link: "/meus-pedidos" }
     ];
 
     const infoList2 = [
-        { text: "Camisetas", link: "/shirts" },
-        { text: "Calças", link: "/pants" },
-        { text: "Bonés", link: "/caps" },
-        { text: "Headphones", link: "/headphones" },
-        { text: "Tênis", link: "/shoes" }
+        { text: "Camisetas", link: "/produtos" },
+        { text: "Calças", link: "/produtos" },
+        { text: "Bonés", link: "/produtos" },
+        { text: "Headphones", link: "/produtos" },
+        { text: "Tênis", link: "/produtos" }
     ];
 
     return (
@@ -37,15 +36,15 @@ const Footer = () => {
                     </div>
                     <div className="subgrupicons">
                         <IconContext.Provider value={{ color: "#FFFFFF", size: "20px" }}>
-                            <div onClick={() => window.location.href = 'https://facebook.com'}>
+                            <a href="https://facebook.com" aria-label="Facebook da Digital Store">
                                 <FaFacebookF />
-                            </div>
-                            <div onClick={() => window.location.href = "https://www.instagram.com/digitalcollegebr/"}>
+                            </a>
+                            <a href="https://www.instagram.com/digitalcollegebr/" aria-label="Instagram da Digital College">
                                 <BsInstagram />
-                            </div>
-                            <div onClick={() => window.location.href = 'https://x.com'}>
+                            </a>
+                            <a href="https://x.com" aria-label="X da Digital Store">
                                 <BsTwitter />
-                            </div>
+                            </a>
                         </IconContext.Provider>
                     </div>
                 </div>
@@ -62,15 +61,6 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
-            <div className='retangulo' style={{
-              width: '1240px',
-              height: '1px',
-              left: '100px',
-              top: '384px',
-              background: '#FFFFFF',
-              opacity: 0.3
-            }}>
-            </div>
             <div className="copyright">
                 <span>&copy; {new Date().getFullYear()} Digital Store</span>
             </div>

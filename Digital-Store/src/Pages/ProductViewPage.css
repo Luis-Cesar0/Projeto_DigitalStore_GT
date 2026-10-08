@@ -1,17 +1,16 @@
 .principal-detlhes{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 3%;
 }
 .caminho{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-left:200px;
     margin-bottom: 30px;
 }
 .caminho .caminhoLink{
@@ -24,5 +23,33 @@
 
 .detalhes{
     display: flex;
-    margin-bottom: 200px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: clamp(24px, 4vw, 64px);
+    width: 100%;
+    max-width: 1440px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 850px) {
+    .detalhes {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .caminho {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .principal-detlhes {
+        padding: 20px 4%;
+    }
+
+    .caminho {
+        font-size: 0.875rem;
+        gap: 6px;
+    }
 }

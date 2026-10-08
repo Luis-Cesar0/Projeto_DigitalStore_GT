@@ -79,3 +79,57 @@ header{
     font-weight:bold ;
     border-bottom: 2px solid var(--primary);
 }
+
+@media (max-width: 900px) {
+    header {
+        padding: 16px 4%;
+    }
+
+    #top-nav {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    #form-search-nav {
+        order: 3;
+        width: 100%;
+    }
+
+    #pesProduto {
+        width: calc(100% - 48px);
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    #cadEntraCarinho .btn_primary {
+        margin-right: 16px;
+        margin-left: 12px;
+    }
+
+    #listNavLinks {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #cadEntraCarinho {
+        gap: 8px;
+    }
+
+    #cadEntraCarinho .btn_primary {
+        width: auto;
+        height: auto;
+        padding: 9px 12px;
+        margin: 0;
+    }
+
+    #link_cadastro {
+        font-size: 0.9rem;
+    }
+
+    #btn-carrinho img {
+        max-width: 28px;
+    }
+}

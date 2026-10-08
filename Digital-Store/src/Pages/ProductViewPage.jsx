@@ -1,63 +1,54 @@
-import { contextoImgProduto } from "../Context/ContextImgProdut"
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-
-
-import React from 'react';
-// import DetalhesProduto from '../components/DetalhesProduto/DetalhesProduto';
-// import DescProduto from '../components/DescProduto/DescProduto';
-// import SlideProduto from '../components/SlideProduto/SlideProduto';
+import { useContext } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import Gallery from '../components/Gallery/Gallery'
-import BuyBox from "../components/BuyBox/BuyBox";
-import ProductiListing from "../components/ProductListing/ProductListing";
-import Section from "../components/Section/Section";
-
+import BuyBox from '../components/BuyBox/BuyBox'
+import ProductListing from '../components/ProductListing/ProductListing'
+import Section from '../components/Section/Section'
+import { contextoImgProduto } from '../Context/ContextImgProdut'
+import PaginaNaoEncontrada from './PaginaNaoEncontrada'
 import './ProductViewPage.css'
 
-export default function ProductViewPage(){
-    // puxa as imagens dos produto
-    const { imgProduto, setImgProduto } = useContext(contextoImgProduto);
-    let imagemBaner = imgProduto.imgDetalhesProdutos
-    
-    // limita a quantidade de produtos
-    let listadestaque =[]
-    for (let i = 0; i < 4; i++) {
-        listadestaque[i]= imgProduto.produtos[i]
-        
-    }
+export default function ProductViewPage() {
+    const { id } = useParams()
+    const { imgProduto } = useContext(contextoImgProduto)
+    const product = imgProduto.produtos.find((item) => item.id === Number(id))
+
+    if (!product) return <PaginaNaoEncontrada />
+
+    const detailImages = [product.image, ...imgProduto.productDetailImages.filter((image) => image !== product.image)]
+    const highlights = imgProduto.produtos.filter((item) => item.id !== product.id).slice(0, 4)
+
     return (
-        <div className="principal-detlhes" >
-              <div className="caminho">
-                <Link to={'/'} className="Homelink caminhoLink">Home</Link>
-                <span>/</span>
-                <Link to={'/produtos'} className="ProdutosLink caminhoLink"> Produtos</Link>
-                <span>/</span>
-                <Link to={'/produtos'} className="ModeloLink caminhoLink"> Tênis</Link>
-                <span>/</span>
-                <Link to={'/produtos'} className="MarcaLink caminhoLink"> Nike</Link>
-                <span>/</span>
-                <Link to={'/produtos'} className="NomeLink caminhoLink "> Tênis Nike Revolution 6 Next Nature Masculino</Link>
-              </div>
+        <main className="principal-detlhes">
+            <nav className="caminho" aria-label="Caminho de navegação">
+                <Link to="/" className="Homelink caminhoLink">Home</Link>
+                <span aria-hidden="true">/</span>
+                <Link to="/produtos" className="ProdutosLink caminhoLink">Produtos</Link>
+                <span aria-hidden="true">/</span>
+                <span className="NomeLink caminhoLink" aria-current="page">{product.name}</span>
+            </nav>
 
             <div className="detalhes">
-                <Gallery images={imagemBaner} showThumbs ClassName="container-preview" radius={5} height={600}/>
-                {/* cira boybox com as especificações necessárias */}
-                <BuyBox stars={4.7} 
-                categoria={'Casual'} 
-                Marca={'Nike'} 
-                description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.'} 
-                name={'Tênis Nike Revolution 6 Next Nature Masculino'} 
-                prece={219} 
-                priceDiscount={119} 
-                rating={90} 
-                reference={'38416711'}/>
-
+                <Gallery
+                    images={detailImages}
+                    showThumbs
+                    ClassName="container-preview"
+                    radius={5}
+                    height={600}
+                />
+                <BuyBox
+                    categoria={product.categoria}
+                    description="Produto demonstrativo do catálogo local da Digital Store."
+                    name={product.name}
+                    price={product.price}
+                    priceDiscount={product.priceDiscount}
+                    reference={product.id}
+                />
             </div>
-            <Section title={'Produtos em alta'} link="/produtos" Width={1800}>
-                    <ProductiListing listProduto={listadestaque} url={'/produtos'}/>
-            </Section>
-        </div>
 
- 
-    );
+            <Section title="Produtos em alta" link="/produtos" Width={1800}>
+                <ProductListing listProduto={highlights} />
+            </Section>
+        </main>
+    )
 }

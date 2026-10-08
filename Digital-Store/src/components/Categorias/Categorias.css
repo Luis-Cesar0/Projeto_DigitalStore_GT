@@ -1,12 +1,20 @@
 .itensEmDestaque{
-    width: 712px;
+    width: min(712px, 100%);
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 28px;
     padding-bottom: 30px;
     margin: 70px 0px;
      
+}
+
+.itensColecoes a:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+    border-radius: 50%;
 }
 
 .imgColecoes{

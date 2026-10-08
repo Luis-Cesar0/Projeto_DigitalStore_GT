@@ -1,4 +1,3 @@
-import React from "react";
 import pagconstru from '../images/pagconstru.png'
 import './PaginaConstru.css'
 export default function PaginaemConstrucao() {

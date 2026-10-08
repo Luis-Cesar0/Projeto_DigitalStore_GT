@@ -1,27 +1,16 @@
-import React from 'react';
-import logo from '../../images/logo_DStore.png'; 
-import logoBranca from '../../images/logo_DStore_branca.png'; 
+import PropTypes from 'prop-types'
+import logo from '../../images/logo_DStore.png'
+import logoBranca from '../../images/logo_DStore_branca.png'
 
-const Logo = ({cor = 'rosa'}) => {
+export default function Logo({ cor = 'rosa' }) {
     return (
-      <>
-          {/* troca a cor da logo,dependedno do paramento passado */}
-          {cor == 'branca' && <img src={logoBranca} alt="Digital Store Logo" style={{ 
-   
-             left: '0%',
-             right: '86.96%',
-             top: '86.36%',
-             bottom: '-61.36%',
-                        }} />}
-          {cor == 'rosa' && <img src={logo} alt="Digital Store Logo" style={{ 
-   
-             left: '0%',
-             right: '86.96%',
-             top: '86.36%',
-             bottom: '-61.36%',
-                        }} />}
-      </>
-    );
-};
+        <img
+            src={cor === 'branca' ? logoBranca : logo}
+            alt="Digital Store"
+        />
+    )
+}
 
-export default Logo;
+Logo.propTypes = {
+    cor: PropTypes.oneOf(['branca', 'rosa']),
+}

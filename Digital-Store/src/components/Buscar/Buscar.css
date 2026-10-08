@@ -1,27 +1,51 @@
-#form-search-nav{
-    
-    background-color: hsla(0, 0%, 40%, 0.040);
+#form-search-nav {
+    display: flex;
+    align-items: center;
+    min-width: 0;
     width: 55%;
+    background-color: hsla(0, 0%, 40%, 0.04);
     border-radius: var(--borda-redonda);
 }
 
-#pesProduto{
-    width: 95%;
-    font-size: 1.2rem;
+#pesProduto {
+    flex: 1;
+    width: auto;
+    min-width: 0;
     padding: 15px 20px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: none;
     border-radius: var(--borda-redonda);
+    font-size: 1.2rem;
 }
-  
-#pesProduto:focus{
-    border: none;
-    outline: none;
+
+#pesProduto:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: -2px;
 }
-#btnPesquisa{
-    font-size: 1.4rem;
-    background-color: rgba(0, 0, 0, 0);
+
+#btnPesquisa {
+    flex: 0 0 auto;
+    padding: 8px 12px;
+    background-color: transparent;
     color: var(--dark-gray-3);
     border: none;
     border-radius: var(--borda-redonda);
+    font-size: 1.4rem;
+}
+
+#btnPesquisa:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    #form-search-nav {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    #pesProduto {
+        font-size: 1rem;
+        padding: 12px;
+    }
 }

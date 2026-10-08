@@ -3,9 +3,14 @@
     margin-bottom: 10px;
     padding: 5px;
     color: var(--dark-gray-2) ;
+    border: 0;
+    min-width: 0;
 }
-.cont-Categorias h5{
+.cont-Categorias legend{
     font-weight: bold;
+    float: none;
+    width: auto;
+    padding: 0;
 }
 
 
@@ -24,6 +29,11 @@
 .cont-Categorias input[type="checkbox"]:checked,
 .cont-Categorias input[type="radio"]:checked {
     accent-color: #C92071;
+}
+
+.cont-Categorias input:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
 }
 
 .checkCircle{

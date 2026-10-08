@@ -15,15 +15,9 @@ import './Home.css'
 
 export default function Home(){
     // puxa os produtos e as imagens do contexto
-    const { imgProduto, setImgProduto } = useContext(contextoImgProduto);
-    let imagemBaner = imgProduto.imgBnaer
-    let listadestaque =[]
-    // limita a quantidade de prodtuos
-    for (let i = 0; i < 8; i++) {
-        listadestaque[i]= imgProduto.produtos[i]
-        
-        
-    }
+    const { imgProduto } = useContext(contextoImgProduto);
+    const imagemBaner = imgProduto.bannerImages
+    const listadestaque = imgProduto.produtos.slice(0, 8)
    
     
     return(
@@ -33,12 +27,12 @@ export default function Home(){
                 <Section title={'Coleções em destaque'} Width={1500}>
                     <ProdutosPromocao/>
                 </Section>
-                <Section title={'Coleções em destaque'} titleAlign="center" Width={1500}>
+                <Section title={'Categorias em destaque'} titleAlign="center" Width={1500}>
                     <Categorias/>
                 </Section>
             
                 <Section title={'Produtos em alta'} link="produtos" Width={1500}>
-                    <ProductiListing listProduto={listadestaque} url={'produtos/:id'}/>
+                    <ProductiListing listProduto={listadestaque}/>
                 </Section>
             </div>
             <OfertaEspecial/>

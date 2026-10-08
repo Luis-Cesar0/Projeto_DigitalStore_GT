@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Informacoes.css';
 
 const Informacoes = ({ title, informations }) => {
@@ -7,9 +7,9 @@ const Informacoes = ({ title, informations }) => {
         <div className="informacoes">
             <h3 className="subtitle">{title}</h3>
             <ul>
-                {informations.map((info, index) => (
-                    <li key={index}>
-                        <a href={info.link}>{info.text}</a>
+                {informations.map((info) => (
+                    <li key={info.link}>
+                        <Link to={info.link}>{info.text}</Link>
                     </li>
                 ))}
             </ul>

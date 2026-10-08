@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     background-color: #2E2E2E; /* Cor dark-gray */
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     font-family: "Inter", sans-serif;
     color: #FFFFFF;
@@ -40,9 +40,15 @@
     padding: 40px 0;
 }
 
-.subgrupicons div {
+.subgrupicons a {
     margin: 0 10px;
-    cursor: pointer; /* Adicionado para indicar que são clicáveis */
+    display: inline-flex;
+    align-items: center;
+}
+
+.subgrupicons a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
 }
 
 .subgruplists ul {
@@ -85,6 +91,25 @@
     .footercontainer {
         display: flex;
         align-items: flex-start;
+    }
+
+    .subgrup2 {
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .subgruplists ul li {
+        white-space: normal;
+    }
+
+    .subcontainer {
+        margin-top: 24px;
+        padding: 0 12px;
+    }
+
+    .phone {
+        margin-top: 16px;
     }
 }
 

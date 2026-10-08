@@ -1,80 +1,102 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 import './BuyBox.css'
 
-export default function BuyBox({name,reference,Marca,categoria,stars,rating,prece,priceDiscount,description}) {
-    const items = [0,1,2,3,4]
+const formatPrice = (price) => price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
-    const [activeColor, setActiveColor] = useState('azul');
+export default function BuyBox({ name, reference, categoria, stars, rating, price, priceDiscount, description }) {
+    const [activeColor, setActiveColor] = useState('azul')
+    const [activeSize, setActiveSize] = useState('39')
+    const sizes = ['39', '40', '41', '42', '43']
+    const colors = [
+        { name: 'azul', label: 'Azul' },
+        { name: 'vermelho', label: 'Vermelho' },
+        { name: 'cinza', label: 'Cinza' },
+        { name: 'roxo', label: 'Roxo' },
+    ]
+    const hasDiscount = Number.isFinite(priceDiscount) && priceDiscount < price
 
-    // muda a cor selecionada na buybox
-    const handleClickColor= (color) => {
-        setActiveColor(color);
-    };
-    // muda a o tamanho do calçado selecionado na da bybox
-    const [activeBtn, setActiveBtn] = useState('39');
-
-    const handleClickBtn = (numero) => {
-        setActiveBtn(numero);
-    };
-    return(
-        <div className="BuyBox">
+    return (
+        <section className="BuyBox" aria-labelledby="product-name">
             <div className="BoxTextReference">
-                <h1>{name}</h1>
-                <div className='cont-catMarcaRef'>
-                    <p>{categoria} |</p>
-                    <p>{Marca} |</p>
-                    <p>REF:{reference}</p>
+                <h1 id="product-name">{name}</h1>
+                <div className="cont-catMarcaRef">
+                    <p>{categoria}</p>
+                    <p>Ref: {reference}</p>
                 </div>
             </div>
-                <div className="estrelas">
-                    {
-                        items.map((index) => {
-                            
-                           return (
-                            index < Math.trunc(stars) ?
-                           <i className="bi bi-star-fill amarelo" key={index}></i>
-                           :
-                           <i className="bi bi-star amarelo " key={index}></i>
-                        )
-                        })
-                    }
-                    <span className='qtdEstrelas'>{stars}<i className="bi bi-star-fill"></i></span>
-                    <span className='qtdAvalia'>{`(${rating} avaliações)`}</span>
+
+            {Number.isFinite(stars) && Number.isFinite(rating) && (
+                <div className="estrelas" aria-label={`Avaliação ${stars} de 5, ${rating} avaliações`}>
+                    {Array.from({ length: 5 }, (_, index) => (
+                        <i className={`bi ${index < Math.trunc(stars) ? 'bi-star-fill' : 'bi-star'} amarelo`} key={index} aria-hidden="true" />
+                    ))}
+                    <span className="qtdEstrelas">{stars}<i className="bi bi-star-fill" aria-hidden="true" /></span>
+                    <span className="qtdAvalia">({rating} avaliações)</span>
                 </div>
-                    {/* decide em qual formato o preço vai aparecer */}
-                    {
-                        priceDiscount ? 
-                        <div className='cont-preceDesc'>
-                            <p className='precodesc'>R$<strong>{priceDiscount}</strong></p>
-                            <p className='preco'>{`R$${prece}`}</p>
-                        </div>
-                        :
-                        <div className='cont-prece'>
-                            <p className='preco'>{`R$${prece}`}</p>
-                        </div>
-                        
-                    }
-                    <div className='descricao'>
-                        <h5>Descrição do produto</h5>
-                        <p>{description}</p>
-                    </div>
-                    <div className="tamanho">
-                        <h5>Tamanho</h5>
-                        <button className={activeBtn === '39' ? 'actiBtn' : ''} onClick={() => handleClickBtn('39')}>39</button>
-                        <button className={activeBtn === '40' ? 'actiBtn' : ''} onClick={() => handleClickBtn('40')}>40</button>
-                        <button className={activeBtn === '41' ? 'actiBtn' : ''} onClick={() => handleClickBtn('41')}>41</button>
-                        <button className={activeBtn === '42' ? 'actiBtn' : ''}onClick={() => handleClickBtn('42')}>42</button>
-                        <button className={activeBtn === '43' ? 'actiBtn' : ''} onClick={() => handleClickBtn('43')}>43</button>
-                    </div>
-                    <div className='cores'>
-                        <h5>Tamanho</h5>
-                        <button className={activeColor === 'azul' ? 'actiColor' : ''} onClick={() => handleClickColor('azul')}><p className='azul'></p></button>
-                <button className={activeColor === 'vermelho' ? 'actiColor' : ''} onClick={() => handleClickColor('vermelho')}><p className='vermelho'></p></button>
-                <button className={activeColor === 'cinza' ? 'actiColor' : ''} onClick={() => handleClickColor('cinza')}><p className='cinza'></p></button>
-                <button className={activeColor === 'roxo' ? 'actiColor' : ''} onClick={() => handleClickColor('roxo')}><p className='roxo'></p></button>
-                    </div>
-                    <a href="#" className='btncomprar'>COMPRAR</a>
-            
-        </div>
+            )}
+
+            <div className={hasDiscount ? 'cont-preceDesc' : 'cont-prece'}>
+                {hasDiscount && <p className="preco">{formatPrice(price)}</p>}
+                <p className={hasDiscount ? 'precodesc' : 'preco'}>{formatPrice(hasDiscount ? priceDiscount : price)}</p>
+            </div>
+
+            <div className="descricao">
+                <h2>Descrição do produto</h2>
+                <p>{description}</p>
+            </div>
+
+            <div className="tamanho">
+                <h2>Tamanho</h2>
+                {sizes.map((size) => (
+                    <button
+                        type="button"
+                        className={activeSize === size ? 'actiBtn' : ''}
+                        onClick={() => setActiveSize(size)}
+                        aria-pressed={activeSize === size}
+                        key={size}
+                    >
+                        {size}
+                    </button>
+                ))}
+            </div>
+
+            <div className="cores">
+                <h2>Cor</h2>
+                {colors.map(({ name: color, label }) => (
+                    <button
+                        type="button"
+                        className={activeColor === color ? 'actiColor' : ''}
+                        onClick={() => setActiveColor(color)}
+                        aria-label={label}
+                        aria-pressed={activeColor === color}
+                        key={color}
+                    >
+                        <span className={color} aria-hidden="true" />
+                    </button>
+                ))}
+            </div>
+
+            <button
+                className="btncomprar"
+                type="button"
+                disabled
+                title="Fluxo de compra não disponível nesta demonstração"
+                aria-label="Compra desativada nesta demonstração"
+            >
+                COMPRAR
+            </button>
+        </section>
     )
+}
+
+BuyBox.propTypes = {
+    name: PropTypes.string.isRequired,
+    reference: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    categoria: PropTypes.string.isRequired,
+    stars: PropTypes.number,
+    rating: PropTypes.number,
+    price: PropTypes.number.isRequired,
+    priceDiscount: PropTypes.number,
+    description: PropTypes.string.isRequired,
 }

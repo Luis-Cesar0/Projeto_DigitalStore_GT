@@ -16,8 +16,13 @@ export default function Rotas() {
                 <Route path="categoria" element={<PaginaemConstrucao/>} />
                 <Route path="meus-pedidos" element={<PaginaemConstrucao/>} />
                 <Route path="cadastro" element={<PaginaemConstrucao/>} />
-                <Route path="loguin" element={<PaginaemConstrucao/>} />
+                <Route path="login" element={<PaginaemConstrucao/>} />
                 <Route path="carrinho" element={<PaginaemConstrucao/>} />
+                <Route path="about" element={<PaginaemConstrucao/>} />
+                <Route path="security" element={<PaginaemConstrucao/>} />
+                <Route path="wishlist" element={<PaginaemConstrucao/>} />
+                <Route path="blog" element={<PaginaemConstrucao/>} />
+                <Route path="careers" element={<PaginaemConstrucao/>} />
                 <Route path="*" element={<PaginaNaoEncotrada/>}/>
                 
             </Routes>

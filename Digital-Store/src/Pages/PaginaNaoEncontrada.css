@@ -65,3 +65,31 @@
     color: var(--light-gray-3);
     background: #b43c50;
 }
+
+@media (max-width: 760px) {
+    .divErro404,
+    .conteinerErro404 {
+        width: 100%;
+    }
+
+    .divErro404 {
+        min-height: 420px;
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    .conteinerErro404 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    .erro404 h1 {
+        font-size: 72px;
+    }
+
+    .mensagemErro h2,
+    .mensagemErro h3 {
+        text-align: center;
+    }
+}

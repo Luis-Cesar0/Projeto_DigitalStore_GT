@@ -1,73 +1,83 @@
-import './Gallery.css'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import fogo from '../../images/fogo.png'
-import { Link } from 'react-router-dom';
+import './Gallery.css'
 
+function Gallery({ ClassName = 'galleria-promo', Width, height, radius, showThumbs, images }) {
+    return (
+        <div
+            id="galeria"
+            className={`carousel slide carousel-dark ${ClassName}`}
+            style={{ width: Width, height, borderRadius: radius }}
+        >
+            <div className="carousel-inner" id="container-galeria">
+                {images.map((image, index) => (
+                    <div className={`carousel-item${index === 0 ? ' active' : ''}`} key={`slide-${index}`}>
+                        <div className="conteudo-galeria">
+                            {!showThumbs && (
+                                <div className="texto-galeria">
+                                    <p className="alerta-promo">Melhores ofertas personalizadas</p>
+                                    <h2>Queima de estoque Nike <img src={fogo} alt="" /></h2>
+                                    <p className="detalhe-galeria">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+                                    <Link to="/produtos/1" className="btn-primary">Ver Oferta</Link>
+                                </div>
+                            )}
+                            <img
+                                src={image}
+                                className="img-slide"
+                                alt={showThumbs ? `Imagem ${index + 1} do produto` : 'Tênis em destaque'}
+                            />
+                        </div>
+                    </div>
+                ))}
+            </div>
 
-function Gallery({ClassName ='galleria-promo',Width,height,radius,showThumbs,images }) {
-  
-  return (
-    <div id="galeria" className={`carousel slide carousel-dark ${ClassName}`} style={
-      {width: Width, height: height, borderRadius: radius}
-    }>
-        {/* container dos botões da parte debaixo do slide */}
-        <div className="carousel-indicators" id={showThumbs != true ? "cont-indicators" : "cont-preview"}>
-          {/* Usando o map com o array de imagens para cria os botôes para cada slide */}
-          {images.map((img, index) => {
-            return(
-              <button type="button" 
-              data-bs-target="#galeria" 
-              data-bs-slide-to={index} 
-              className={index == 0 ? "indicador active" :"indicador"} 
-              aria-current="true" 
-              aria-label={`Slide ${index + 1}`} 
-              key={index} 
-              style={{ borderRadius: radius}}>
+            <div className="carousel-indicators" id={showThumbs ? 'cont-preview' : 'cont-indicators'}>
+                {images.map((image, index) => (
+                    <button
+                        type="button"
+                        data-bs-target="#galeria"
+                        data-bs-slide-to={index}
+                        className={`indicador${index === 0 ? ' active' : ''}`}
+                        aria-current={index === 0 ? 'true' : undefined}
+                        aria-label={`Slide ${index + 1}`}
+                        key={`indicator-${index}`}
+                        style={{ borderRadius: radius }}
+                    >
+                        {showThumbs && (
+                            <img
+                                src={image}
+                                className="img-preview"
+                                alt=""
+                                aria-hidden="true"
+                                style={{ borderRadius: radius }}
+                            />
+                        )}
+                    </button>
+                ))}
+            </div>
 
-                {showThumbs == true && <img src={img} className='img-preview' alt='Imagem do Produto' style={{ borderRadius: radius}}/>}
-
-              </button>
-            )
-          })}
+            <div id="arrow-galeria">
+                <button className="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true" />
+                    <span className="visually-hidden">Anterior</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true" />
+                    <span className="visually-hidden">Próximo</span>
+                </button>
+            </div>
         </div>
-
-          {/* container onde fica todos os slides */}
-        <div className="carousel-inner" id="container-galeria">
-            {/* Usando o map com o array de imagens para cria os As imagens de cada slide */}
-            {images.map((img,index)=>{
-              return(
-                <div className={index == 0 ? "carousel-item active" : "carousel-item" } key={index}>
-                  <div className="conteudo-galeria">
-                        {/* showThumbs para esconder o texto promocional */}
-                      {showThumbs != true &&
-                        <div className="texto-galeria">
-                        <p className="alerta-promo">Melhores ofertas personalizadas</p>
-                        <h2>Queima de stoque Nike <img src={fogo} alt="fogo" /></h2>
-                        <p className="detalhe-galeria">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                        <Link to={'produtos/:id'} className="btn-primary">Ver Oferta</Link>
-                      </div>}
-
-                    <img src={img} className='img-slide' alt='Imagem do Produto' />
-                  </div>
-                </div>
-              )
-            })}
-        </div>
-
-        {/* setas que movem o slides */}
-        <div id="arrow-galeria">
-          <button className="carousel-control-prev " type="button" data-bs-target="#galeria" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-
-      </div>
-  );
+    )
 }
 
-export default Gallery;
+Gallery.propTypes = {
+    ClassName: PropTypes.string,
+    Width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    radius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    showThumbs: PropTypes.bool,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
 
+export default Gallery
